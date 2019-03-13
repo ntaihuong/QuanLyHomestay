@@ -33,7 +33,7 @@
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-<<<<<<< HEAD
+
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.splitContainer3 = new System.Windows.Forms.SplitContainer();
@@ -45,11 +45,11 @@
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-=======
+
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
->>>>>>> 83d10b795db52e3afbc1b119d14e97813ae0f3a7
+
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -83,7 +83,7 @@
             this.splitContainer1.SplitterDistance = 76;
             this.splitContainer1.TabIndex = 0;
             // 
-<<<<<<< HEAD
+
             // label1
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -99,8 +99,7 @@
             this.label1.Text = "HOMESTAY ĐÀ LẠT";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-=======
->>>>>>> 83d10b795db52e3afbc1b119d14e97813ae0f3a7
+
             // splitContainer2
             // 
             this.splitContainer2.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -117,19 +116,19 @@
             // 
             // splitContainer2.Panel2
             // 
-<<<<<<< HEAD
+
             this.splitContainer2.Panel2.Controls.Add(this.splitContainer3);
             this.splitContainer2.Size = new System.Drawing.Size(752, 318);
-=======
+
             this.splitContainer2.Panel2.BackgroundImage = global::HomestayApp.Properties.Resources.hn300;
             this.splitContainer2.Panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.splitContainer2.Size = new System.Drawing.Size(752, 312);
->>>>>>> 83d10b795db52e3afbc1b119d14e97813ae0f3a7
+
             this.splitContainer2.SplitterDistance = 250;
             this.splitContainer2.TabIndex = 0;
             // 
             // dateTimePicker2
-<<<<<<< HEAD
+
             // 
             this.dateTimePicker2.Location = new System.Drawing.Point(15, 134);
             this.dateTimePicker2.Name = "dateTimePicker2";
@@ -142,7 +141,7 @@
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker1.TabIndex = 2;
-=======
+
             // 
             this.dateTimePicker2.Location = new System.Drawing.Point(12, 184);
             this.dateTimePicker2.Name = "dateTimePicker2";
@@ -166,7 +165,7 @@
             this.label2.Size = new System.Drawing.Size(187, 42);
             this.label2.TabIndex = 0;
             this.label2.Text = "Ngày đến";
->>>>>>> 83d10b795db52e3afbc1b119d14e97813ae0f3a7
+
             // 
             // label3
             // 
@@ -179,7 +178,6 @@
             this.label3.TabIndex = 1;
             this.label3.Text = "Ngày đi";
             // 
-<<<<<<< HEAD
             // label2
             // 
             this.label2.AutoSize = true;
@@ -283,7 +281,7 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "Đánh giá";
             this.button1.UseVisualStyleBackColor = true;
-=======
+
             // label1
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -298,7 +296,7 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "HOMESTAY ĐÀ LẠT";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
->>>>>>> 83d10b795db52e3afbc1b119d14e97813ae0f3a7
+
             // 
             // Form1
             // 
