@@ -70,7 +70,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(752, 75);
             this.label1.TabIndex = 0;
-            this.label1.Text = "HOMESTAY ĐÀ LẠT";
+            this.label1.Text = "HOESTAY ĐÀ LẠT";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // splitContainer2
