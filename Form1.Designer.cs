@@ -30,12 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.label1 = new System.Windows.Forms.Label();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lbGo = new System.Windows.Forms.Label();
+            this.lbCome = new System.Windows.Forms.Label();
             this.splitContainer3 = new System.Windows.Forms.SplitContainer();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -45,11 +45,6 @@
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -83,7 +78,6 @@
             this.splitContainer1.SplitterDistance = 76;
             this.splitContainer1.TabIndex = 0;
             // 
-
             // label1
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -94,12 +88,11 @@
             this.label1.Image = ((System.Drawing.Image)(resources.GetObject("label1.Image")));
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(752, 76);
+            this.label1.Size = new System.Drawing.Size(752, 75);
             this.label1.TabIndex = 0;
             this.label1.Text = "HOMESTAY ĐÀ LẠT";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-
             // splitContainer2
             // 
             this.splitContainer2.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -111,37 +104,19 @@
             this.splitContainer2.Panel1.BackgroundImage = global::HomestayApp.Properties.Resources.hn300;
             this.splitContainer2.Panel1.Controls.Add(this.dateTimePicker2);
             this.splitContainer2.Panel1.Controls.Add(this.dateTimePicker1);
-            this.splitContainer2.Panel1.Controls.Add(this.label3);
-            this.splitContainer2.Panel1.Controls.Add(this.label2);
+            this.splitContainer2.Panel1.Controls.Add(this.lbGo);
+            this.splitContainer2.Panel1.Controls.Add(this.lbCome);
             // 
             // splitContainer2.Panel2
             // 
-
-            this.splitContainer2.Panel2.Controls.Add(this.splitContainer3);
-            this.splitContainer2.Size = new System.Drawing.Size(752, 318);
-
             this.splitContainer2.Panel2.BackgroundImage = global::HomestayApp.Properties.Resources.hn300;
             this.splitContainer2.Panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.splitContainer2.Size = new System.Drawing.Size(752, 312);
-
+            this.splitContainer2.Panel2.Controls.Add(this.splitContainer3);
+            this.splitContainer2.Size = new System.Drawing.Size(752, 318);
             this.splitContainer2.SplitterDistance = 250;
             this.splitContainer2.TabIndex = 0;
             // 
             // dateTimePicker2
-
-            // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(15, 134);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker2.TabIndex = 3;
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(12, 66);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 2;
-
             // 
             this.dateTimePicker2.Location = new System.Drawing.Point(12, 184);
             this.dateTimePicker2.Name = "dateTimePicker2";
@@ -155,38 +130,28 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker1.TabIndex = 2;
             // 
-            // label2
+            // lbGo
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label2.Location = new System.Drawing.Point(12, 25);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(187, 42);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Ngày đến";
-
+            this.lbGo.AutoSize = true;
+            this.lbGo.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lbGo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.lbGo.Location = new System.Drawing.Point(12, 135);
+            this.lbGo.Name = "lbGo";
+            this.lbGo.Size = new System.Drawing.Size(152, 42);
+            this.lbGo.TabIndex = 1;
+            this.lbGo.Text = "Ngày đi";
             // 
-            // label3
+            // lbCome
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label3.Location = new System.Drawing.Point(12, 135);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(152, 42);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Ngày đi";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 32);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(54, 13);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Ngày đến";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbCome.AutoSize = true;
+            this.lbCome.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lbCome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.lbCome.Location = new System.Drawing.Point(12, 32);
+            this.lbCome.Name = "lbCome";
+            this.lbCome.Size = new System.Drawing.Size(187, 42);
+            this.lbCome.TabIndex = 0;
+            this.lbCome.Text = "Ngày đến";
+            this.lbCome.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // splitContainer3
             // 
@@ -281,22 +246,6 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "Đánh giá";
             this.button1.UseVisualStyleBackColor = true;
-
-            // label1
-            // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.Font = new System.Drawing.Font("Broadway", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label1.Image = ((System.Drawing.Image)(resources.GetObject("label1.Image")));
-            this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(752, 75);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "HOMESTAY ĐÀ LẠT";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-
             // 
             // Form1
             // 
@@ -336,8 +285,8 @@
         private System.Windows.Forms.SplitContainer splitContainer2;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lbGo;
+        private System.Windows.Forms.Label lbCome;
         private System.Windows.Forms.SplitContainer splitContainer3;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;
