@@ -45,6 +45,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="fmDangKi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmDangKi.Designer.cs">
+      <DependentUpon>fmDangKi.cs</DependentUpon>
+    </Compile>
     <Compile Include="fmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -59,6 +65,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="fmDangKi.resx">
+      <DependentUpon>fmDangKi.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fmLogin.resx">
       <DependentUpon>fmLogin.cs</DependentUpon>
     </EmbeddedResource>
