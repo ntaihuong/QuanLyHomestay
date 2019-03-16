@@ -19,7 +19,7 @@ namespace HomestayApp.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -93,6 +93,17 @@ namespace HomestayApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap glowing_light_blue_abstract_programming_code_background_on_dark_software_or_script_development_concept_rgg0rnttyl_thumbnail_full01 {
+            get {
+                object obj = ResourceManager.GetObject("glowing-light-blue-abstract-programming-code-background-on-dark-software-or-scrip" +
+                        "t-development-concept_rgg0rnttyl_thumbnail-full01", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap hn300 {
             get {
                 object obj = ResourceManager.GetObject("hn300", resourceCulture);
@@ -116,6 +127,26 @@ namespace HomestayApp.Properties {
         internal static System.Drawing.Bitmap NC2 {
             get {
                 object obj = ResourceManager.GetObject("NC2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap nhung_hinh_nen_powerpoint_mau_xanh_duong_dep_012325293 {
+            get {
+                object obj = ResourceManager.GetObject("nhung-hinh-nen-powerpoint-mau-xanh-duong-dep_012325293", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pattern_background_background_pattern_blue_thumb {
+            get {
+                object obj = ResourceManager.GetObject("pattern-background-background-pattern-blue-thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -163,9 +194,29 @@ namespace HomestayApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap tải_xuống1 {
+            get {
+                object obj = ResourceManager.GetObject("tải xuống1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap TC1 {
             get {
                 object obj = ResourceManager.GetObject("TC1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tuyet_roi_bacsiwindows_com {
+            get {
+                object obj = ResourceManager.GetObject("tuyet-roi-bacsiwindows-com", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

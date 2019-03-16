@@ -16,7 +16,11 @@ namespace HomestayApp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+<<<<<<< HEAD
+            Application.Run(new fmDangKi());
+=======
+            Application.Run(new fmLogin());
+>>>>>>> 14bbfac1eebc9f698f74184c65a82ed38dab5ae5
         }
     }
 }

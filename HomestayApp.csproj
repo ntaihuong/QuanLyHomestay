@@ -190,6 +190,11 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\tải xuống.jpg" />
+    <None Include="Resources\glowing-light-blue-abstract-programming-code-background-on-dark-software-or-script-development-concept_rgg0rnttyl_thumbnail-full01.png" />
+    <None Include="Resources\pattern-background-background-pattern-blue-thumb.jpg" />
+    <None Include="Resources\tuyet-roi-bacsiwindows-com.jpg" />
+    <None Include="Resources\nhung-hinh-nen-powerpoint-mau-xanh-duong-dep_012325293.jpg" />
     <None Include="Resources\VP3.jpg" />
     <None Include="Resources\TC1.jpg" />
     <None Include="Resources\PTT.jpg" />

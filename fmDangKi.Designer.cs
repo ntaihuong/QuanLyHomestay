@@ -60,6 +60,7 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.panel1.Controls.Add(this.panel6);
             this.panel1.Controls.Add(this.panel7);
             this.panel1.Controls.Add(this.panel4);
@@ -68,32 +69,38 @@
             this.panel1.Controls.Add(this.btnDangKi);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Location = new System.Drawing.Point(5, 12);
+            this.panel1.Location = new System.Drawing.Point(26, 14);
+            this.panel1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(341, 340);
+            this.panel1.Size = new System.Drawing.Size(512, 418);
             this.panel1.TabIndex = 1;
             // 
             // panel6
             // 
+            this.panel6.BackColor = System.Drawing.Color.Turquoise;
             this.panel6.Controls.Add(this.txtXNMK);
             this.panel6.Controls.Add(this.lbXNMK);
-            this.panel6.Location = new System.Drawing.Point(3, 233);
+            this.panel6.Location = new System.Drawing.Point(5, 287);
+            this.panel6.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(335, 40);
+            this.panel6.Size = new System.Drawing.Size(503, 49);
             this.panel6.TabIndex = 7;
             // 
             // txtXNMK
             // 
-            this.txtXNMK.Location = new System.Drawing.Point(133, 12);
+            this.txtXNMK.Location = new System.Drawing.Point(199, 15);
+            this.txtXNMK.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txtXNMK.Name = "txtXNMK";
-            this.txtXNMK.Size = new System.Drawing.Size(188, 20);
+            this.txtXNMK.Size = new System.Drawing.Size(279, 22);
             this.txtXNMK.TabIndex = 1;
             // 
             // lbXNMK
             // 
             this.lbXNMK.AutoSize = true;
+            this.lbXNMK.BackColor = System.Drawing.Color.Turquoise;
             this.lbXNMK.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbXNMK.Location = new System.Drawing.Point(3, 11);
+            this.lbXNMK.Location = new System.Drawing.Point(5, 14);
+            this.lbXNMK.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lbXNMK.Name = "lbXNMK";
             this.lbXNMK.Size = new System.Drawing.Size(114, 16);
             this.lbXNMK.TabIndex = 0;
@@ -101,25 +108,30 @@
             // 
             // panel7
             // 
+            this.panel7.BackColor = System.Drawing.Color.Turquoise;
             this.panel7.Controls.Add(this.txtMatKhau);
             this.panel7.Controls.Add(this.lbMhatkhau);
-            this.panel7.Location = new System.Drawing.Point(3, 187);
+            this.panel7.Location = new System.Drawing.Point(5, 230);
+            this.panel7.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(335, 40);
+            this.panel7.Size = new System.Drawing.Size(503, 49);
             this.panel7.TabIndex = 6;
             // 
             // txtMatKhau
             // 
-            this.txtMatKhau.Location = new System.Drawing.Point(133, 12);
+            this.txtMatKhau.Location = new System.Drawing.Point(199, 15);
+            this.txtMatKhau.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txtMatKhau.Name = "txtMatKhau";
-            this.txtMatKhau.Size = new System.Drawing.Size(188, 20);
+            this.txtMatKhau.Size = new System.Drawing.Size(279, 22);
             this.txtMatKhau.TabIndex = 1;
             // 
             // lbMhatkhau
             // 
             this.lbMhatkhau.AutoSize = true;
+            this.lbMhatkhau.BackColor = System.Drawing.Color.Turquoise;
             this.lbMhatkhau.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMhatkhau.Location = new System.Drawing.Point(3, 11);
+            this.lbMhatkhau.Location = new System.Drawing.Point(5, 14);
+            this.lbMhatkhau.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lbMhatkhau.Name = "lbMhatkhau";
             this.lbMhatkhau.Size = new System.Drawing.Size(62, 16);
             this.lbMhatkhau.TabIndex = 0;
@@ -127,25 +139,30 @@
             // 
             // panel4
             // 
+            this.panel4.BackColor = System.Drawing.Color.Turquoise;
             this.panel4.Controls.Add(this.txtTaikhoan);
             this.panel4.Controls.Add(this.lbTaikhoan);
-            this.panel4.Location = new System.Drawing.Point(3, 141);
+            this.panel4.Location = new System.Drawing.Point(5, 174);
+            this.panel4.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(335, 40);
+            this.panel4.Size = new System.Drawing.Size(503, 49);
             this.panel4.TabIndex = 5;
             // 
             // txtTaikhoan
             // 
-            this.txtTaikhoan.Location = new System.Drawing.Point(133, 12);
+            this.txtTaikhoan.Location = new System.Drawing.Point(199, 15);
+            this.txtTaikhoan.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txtTaikhoan.Name = "txtTaikhoan";
-            this.txtTaikhoan.Size = new System.Drawing.Size(188, 20);
+            this.txtTaikhoan.Size = new System.Drawing.Size(279, 22);
             this.txtTaikhoan.TabIndex = 1;
             // 
             // lbTaikhoan
             // 
             this.lbTaikhoan.AutoSize = true;
+            this.lbTaikhoan.BackColor = System.Drawing.Color.Turquoise;
             this.lbTaikhoan.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTaikhoan.Location = new System.Drawing.Point(3, 11);
+            this.lbTaikhoan.Location = new System.Drawing.Point(5, 14);
+            this.lbTaikhoan.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lbTaikhoan.Name = "lbTaikhoan";
             this.lbTaikhoan.Size = new System.Drawing.Size(62, 16);
             this.lbTaikhoan.TabIndex = 0;
@@ -153,25 +170,30 @@
             // 
             // panel5
             // 
+            this.panel5.BackColor = System.Drawing.Color.Turquoise;
             this.panel5.Controls.Add(this.txtPhone);
             this.panel5.Controls.Add(this.lbPhone);
-            this.panel5.Location = new System.Drawing.Point(3, 95);
+            this.panel5.Location = new System.Drawing.Point(5, 117);
+            this.panel5.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(335, 40);
+            this.panel5.Size = new System.Drawing.Size(503, 49);
             this.panel5.TabIndex = 4;
             // 
             // txtPhone
             // 
-            this.txtPhone.Location = new System.Drawing.Point(133, 12);
+            this.txtPhone.Location = new System.Drawing.Point(199, 15);
+            this.txtPhone.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txtPhone.Name = "txtPhone";
-            this.txtPhone.Size = new System.Drawing.Size(188, 20);
+            this.txtPhone.Size = new System.Drawing.Size(279, 22);
             this.txtPhone.TabIndex = 1;
             // 
             // lbPhone
             // 
             this.lbPhone.AutoSize = true;
+            this.lbPhone.BackColor = System.Drawing.Color.Turquoise;
             this.lbPhone.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbPhone.Location = new System.Drawing.Point(3, 11);
+            this.lbPhone.Location = new System.Drawing.Point(5, 14);
+            this.lbPhone.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lbPhone.Name = "lbPhone";
             this.lbPhone.Size = new System.Drawing.Size(42, 16);
             this.lbPhone.TabIndex = 0;
@@ -179,45 +201,54 @@
             // 
             // btnThoat
             // 
+            this.btnThoat.BackColor = System.Drawing.Color.White;
             this.btnThoat.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThoat.Location = new System.Drawing.Point(188, 293);
+            this.btnThoat.Location = new System.Drawing.Point(283, 361);
+            this.btnThoat.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(75, 30);
+            this.btnThoat.Size = new System.Drawing.Size(113, 37);
             this.btnThoat.TabIndex = 3;
             this.btnThoat.Text = "Thoát";
-            this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.UseVisualStyleBackColor = false;
             // 
             // btnDangKi
             // 
+            this.btnDangKi.BackColor = System.Drawing.Color.White;
             this.btnDangKi.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDangKi.Location = new System.Drawing.Point(79, 293);
+            this.btnDangKi.Location = new System.Drawing.Point(118, 361);
+            this.btnDangKi.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.btnDangKi.Name = "btnDangKi";
-            this.btnDangKi.Size = new System.Drawing.Size(75, 30);
+            this.btnDangKi.Size = new System.Drawing.Size(113, 37);
             this.btnDangKi.TabIndex = 2;
             this.btnDangKi.Text = "Đăng Ký";
-            this.btnDangKi.UseVisualStyleBackColor = true;
+            this.btnDangKi.UseVisualStyleBackColor = false;
             // 
             // panel3
             // 
+            this.panel3.BackColor = System.Drawing.Color.Turquoise;
             this.panel3.Controls.Add(this.txtEmail);
             this.panel3.Controls.Add(this.lbEmail);
-            this.panel3.Location = new System.Drawing.Point(3, 49);
+            this.panel3.Location = new System.Drawing.Point(5, 60);
+            this.panel3.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(335, 40);
+            this.panel3.Size = new System.Drawing.Size(503, 49);
             this.panel3.TabIndex = 1;
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(133, 12);
+            this.txtEmail.Location = new System.Drawing.Point(199, 15);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(188, 20);
+            this.txtEmail.Size = new System.Drawing.Size(279, 22);
             this.txtEmail.TabIndex = 1;
             // 
             // lbEmail
             // 
             this.lbEmail.AutoSize = true;
+            this.lbEmail.BackColor = System.Drawing.Color.Turquoise;
             this.lbEmail.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbEmail.Location = new System.Drawing.Point(3, 11);
+            this.lbEmail.Location = new System.Drawing.Point(5, 14);
+            this.lbEmail.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lbEmail.Name = "lbEmail";
             this.lbEmail.Size = new System.Drawing.Size(36, 16);
             this.lbEmail.TabIndex = 0;
@@ -225,25 +256,30 @@
             // 
             // panel2
             // 
+            this.panel2.BackColor = System.Drawing.Color.Turquoise;
             this.panel2.Controls.Add(this.txtHoten);
             this.panel2.Controls.Add(this.lbHoten);
-            this.panel2.Location = new System.Drawing.Point(3, 3);
+            this.panel2.Location = new System.Drawing.Point(5, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(335, 40);
+            this.panel2.Size = new System.Drawing.Size(503, 49);
             this.panel2.TabIndex = 0;
             // 
             // txtHoten
             // 
-            this.txtHoten.Location = new System.Drawing.Point(133, 12);
+            this.txtHoten.Location = new System.Drawing.Point(199, 15);
+            this.txtHoten.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txtHoten.Name = "txtHoten";
-            this.txtHoten.Size = new System.Drawing.Size(188, 20);
+            this.txtHoten.Size = new System.Drawing.Size(279, 22);
             this.txtHoten.TabIndex = 1;
             // 
             // lbHoten
             // 
             this.lbHoten.AutoSize = true;
+            this.lbHoten.BackColor = System.Drawing.Color.Turquoise;
             this.lbHoten.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbHoten.Location = new System.Drawing.Point(3, 11);
+            this.lbHoten.Location = new System.Drawing.Point(5, 14);
+            this.lbHoten.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lbHoten.Name = "lbHoten";
             this.lbHoten.Size = new System.Drawing.Size(45, 16);
             this.lbHoten.TabIndex = 0;
@@ -251,10 +287,14 @@
             // 
             // fmDangKi
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(358, 364);
+            this.BackColor = System.Drawing.Color.White;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(544, 439);
             this.Controls.Add(this.panel1);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.Name = "fmDangKi";
             this.Text = "fmDangKi";
             this.panel1.ResumeLayout(false);
