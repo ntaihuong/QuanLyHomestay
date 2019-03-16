@@ -190,6 +190,7 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\giấy.jpg" />
     <None Include="Resources\images.jpg" />
     <None Include="Resources\tải xuống.jpg" />
     <None Include="Resources\glowing-light-blue-abstract-programming-code-background-on-dark-software-or-script-development-concept_rgg0rnttyl_thumbnail-full01.png" />

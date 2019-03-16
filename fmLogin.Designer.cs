@@ -129,7 +129,7 @@
             this.lbTDN.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lbTDN.Location = new System.Drawing.Point(6, 13);
             this.lbTDN.Name = "lbTDN";
-            this.lbTDN.Size = new System.Drawing.Size(103, 16);
+            this.lbTDN.Size = new System.Drawing.Size(104, 16);
             this.lbTDN.TabIndex = 0;
             this.lbTDN.Text = "Tên đăng nhập";
             // 
@@ -148,7 +148,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
-            this.ClientSize = new System.Drawing.Size(542, 201);
+            this.ClientSize = new System.Drawing.Size(542, 199);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
             this.Name = "fmLogin";
