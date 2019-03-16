@@ -11,7 +11,7 @@ using System.Windows.Forms;
 namespace HomestayApp
 {
     public partial class Form1 : Form
-    {
+    { 
         QuanLyHomestayEntities db = new QuanLyHomestayEntities();
         string extention = ".jpg";
         string path = "C:\\Users\\Huong\\Documents\\GitHub\\QuanLyHomestay";
@@ -43,8 +43,9 @@ namespace HomestayApp
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
             fmLogin frm = new fmLogin();
-            frm.Show();
-
+            frm.ShowDialog();
         }
+
+    
     }
 }
