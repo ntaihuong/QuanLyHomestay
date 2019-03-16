@@ -28,10 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.label1 = new System.Windows.Forms.Label();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.lbGo = new System.Windows.Forms.Label();
@@ -43,10 +46,9 @@
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.btnDanhGia = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
+            this.bindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -60,6 +62,7 @@
             this.splitContainer3.Panel2.SuspendLayout();
             this.splitContainer3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -104,6 +107,7 @@
             // splitContainer2.Panel1
             // 
             this.splitContainer2.Panel1.BackColor = System.Drawing.Color.White;
+            this.splitContainer2.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.splitContainer2.Panel1.Controls.Add(this.button7);
             this.splitContainer2.Panel1.Controls.Add(this.button6);
             this.splitContainer2.Panel1.Controls.Add(this.dateTimePicker2);
@@ -119,6 +123,30 @@
             this.splitContainer2.Size = new System.Drawing.Size(752, 318);
             this.splitContainer2.SplitterDistance = 250;
             this.splitContainer2.TabIndex = 0;
+            // 
+            // button7
+            // 
+            this.button7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button7.BackColor = System.Drawing.Color.Aqua;
+            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.Location = new System.Drawing.Point(134, 262);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(88, 43);
+            this.button7.TabIndex = 5;
+            this.button7.Text = "Đăng nhập";
+            this.button7.UseVisualStyleBackColor = false;
+            // 
+            // button6
+            // 
+            this.button6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.button6.BackColor = System.Drawing.Color.Aqua;
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.Location = new System.Drawing.Point(25, 263);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(88, 41);
+            this.button6.TabIndex = 4;
+            this.button6.Text = "Đăng kí";
+            this.button6.UseVisualStyleBackColor = false;
             // 
             // dateTimePicker2
             // 
@@ -191,7 +219,7 @@
             // splitContainer3.Panel2
             // 
             this.splitContainer3.Panel2.BackColor = System.Drawing.Color.White;
-            this.splitContainer3.Panel2.Controls.Add(this.button1);
+            this.splitContainer3.Panel2.Controls.Add(this.btnDanhGia);
             this.splitContainer3.Panel2.Controls.Add(this.button2);
             this.splitContainer3.Size = new System.Drawing.Size(498, 318);
             this.splitContainer3.SplitterDistance = 258;
@@ -246,7 +274,7 @@
             this.label4.ForeColor = System.Drawing.Color.Blue;
             this.label4.Location = new System.Drawing.Point(38, 10);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(120, 16);
+            this.label4.Size = new System.Drawing.Size(124, 16);
             this.label4.TabIndex = 2;
             this.label4.Text = "Chọn loại phòng";
             // 
@@ -267,11 +295,27 @@
             this.comboBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBox2.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.bindingSource, "MaLoaiPhong", true));
+            this.comboBox2.DataSource = this.bindingSource;
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Location = new System.Drawing.Point(50, 32);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(402, 21);
             this.comboBox2.TabIndex = 0;
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
+            // 
+            // btnDanhGia
+            // 
+            this.btnDanhGia.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnDanhGia.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDanhGia.ForeColor = System.Drawing.Color.Blue;
+            this.btnDanhGia.Location = new System.Drawing.Point(110, 9);
+            this.btnDanhGia.Name = "btnDanhGia";
+            this.btnDanhGia.Size = new System.Drawing.Size(100, 35);
+            this.btnDanhGia.TabIndex = 0;
+            this.btnDanhGia.Text = "Đánh giá";
+            this.btnDanhGia.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.btnDanhGia.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
@@ -286,42 +330,9 @@
             this.button2.Text = "Thanh toán";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // bindingSource
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Blue;
-            this.button1.Location = new System.Drawing.Point(110, 9);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 35);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Đánh giá";
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button6
-            // 
-            this.button6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button6.BackColor = System.Drawing.Color.Aqua;
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(25, 263);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(88, 41);
-            this.button6.TabIndex = 4;
-            this.button6.Text = "Đăng kí";
-            this.button6.UseVisualStyleBackColor = false;
-            // 
-            // button7
-            // 
-            this.button7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button7.BackColor = System.Drawing.Color.Aqua;
-            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(134, 262);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(88, 43);
-            this.button7.TabIndex = 5;
-            this.button7.Text = "Đăng nhập";
-            this.button7.UseVisualStyleBackColor = false;
+            this.bindingSource.DataSource = typeof(HomestayApp.LOAIPHONG);
             // 
             // Form1
             // 
@@ -335,6 +346,7 @@
             this.Text = "Form1";
             this.TopMost = true;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
@@ -350,6 +362,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer3)).EndInit();
             this.splitContainer3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -371,9 +384,10 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Button button2;
-        public System.Windows.Forms.Button button1;
+        public System.Windows.Forms.Button btnDanhGia;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.BindingSource bindingSource;
     }
 }
 
