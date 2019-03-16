@@ -39,6 +39,12 @@ namespace HomestayApp
                 pictureBox1.Image = bm;
             }
         }
-   
+
+        private void btnDangNhap_Click(object sender, EventArgs e)
+        {
+            fmLogin frm = new fmLogin();
+            frm.Show();
+
+        }
     }
 }

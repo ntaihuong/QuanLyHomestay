@@ -33,7 +33,7 @@
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.label1 = new System.Windows.Forms.Label();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
-            this.button7 = new System.Windows.Forms.Button();
+            this.btnDangNhap = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
@@ -108,7 +108,7 @@
             // 
             this.splitContainer2.Panel1.BackColor = System.Drawing.Color.White;
             this.splitContainer2.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.splitContainer2.Panel1.Controls.Add(this.button7);
+            this.splitContainer2.Panel1.Controls.Add(this.btnDangNhap);
             this.splitContainer2.Panel1.Controls.Add(this.button6);
             this.splitContainer2.Panel1.Controls.Add(this.dateTimePicker2);
             this.splitContainer2.Panel1.Controls.Add(this.dateTimePicker1);
@@ -124,17 +124,18 @@
             this.splitContainer2.SplitterDistance = 250;
             this.splitContainer2.TabIndex = 0;
             // 
-            // button7
+            // btnDangNhap
             // 
-            this.button7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button7.BackColor = System.Drawing.Color.Aqua;
-            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(134, 262);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(88, 43);
-            this.button7.TabIndex = 5;
-            this.button7.Text = "Đăng nhập";
-            this.button7.UseVisualStyleBackColor = false;
+            this.btnDangNhap.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnDangNhap.BackColor = System.Drawing.Color.Aqua;
+            this.btnDangNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDangNhap.Location = new System.Drawing.Point(134, 262);
+            this.btnDangNhap.Name = "btnDangNhap";
+            this.btnDangNhap.Size = new System.Drawing.Size(88, 43);
+            this.btnDangNhap.TabIndex = 5;
+            this.btnDangNhap.Text = "Đăng nhập";
+            this.btnDangNhap.UseVisualStyleBackColor = false;
+            this.btnDangNhap.Click += new System.EventHandler(this.btnDangNhap_Click);
             // 
             // button6
             // 
@@ -274,7 +275,7 @@
             this.label4.ForeColor = System.Drawing.Color.Blue;
             this.label4.Location = new System.Drawing.Point(38, 10);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(124, 16);
+            this.label4.Size = new System.Drawing.Size(120, 16);
             this.label4.TabIndex = 2;
             this.label4.Text = "Chọn loại phòng";
             // 
@@ -291,7 +292,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
-            
             // 
             // comboBox2
             // 
@@ -349,7 +349,6 @@
             this.Text = "Form1";
             this.TopMost = true;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
@@ -388,7 +387,7 @@
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Button button2;
         public System.Windows.Forms.Button btnDanhGia;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button btnDangNhap;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.BindingSource bindingSource;
     }
