@@ -44,10 +44,7 @@ namespace HomestayApp
         {
             fmLogin frm = new fmLogin();
             frm.ShowDialog();
-<<<<<<< HEAD
 
-=======
->>>>>>> aa2cf427384feafb676310f929cf6ea72236b707
         }
 
     
