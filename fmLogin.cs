@@ -43,5 +43,10 @@ namespace HomestayApp
                 MessageBox.Show("Lỗi kết nối");
             }
         }
+
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
