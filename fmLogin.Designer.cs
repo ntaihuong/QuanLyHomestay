@@ -29,17 +29,17 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.lbTDN = new System.Windows.Forms.Label();
-            this.txtUserName = new System.Windows.Forms.TextBox();
+            this.btnThoat = new System.Windows.Forms.Button();
+            this.btnDangNhap = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.txtPassWord = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnDangNhap = new System.Windows.Forms.Button();
-            this.btnThoat = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.txtUserName = new System.Windows.Forms.TextBox();
+            this.lbTDN = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -53,31 +53,24 @@
             this.panel1.Size = new System.Drawing.Size(341, 146);
             this.panel1.TabIndex = 0;
             // 
-            // panel2
+            // btnThoat
             // 
-            this.panel2.Controls.Add(this.txtUserName);
-            this.panel2.Controls.Add(this.lbTDN);
-            this.panel2.Location = new System.Drawing.Point(3, 3);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(335, 40);
-            this.panel2.TabIndex = 0;
+            this.btnThoat.Location = new System.Drawing.Point(249, 106);
+            this.btnThoat.Name = "btnThoat";
+            this.btnThoat.Size = new System.Drawing.Size(75, 23);
+            this.btnThoat.TabIndex = 3;
+            this.btnThoat.Text = "Thoát";
+            this.btnThoat.UseVisualStyleBackColor = true;
             // 
-            // lbTDN
+            // btnDangNhap
             // 
-            this.lbTDN.AutoSize = true;
-            this.lbTDN.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTDN.Location = new System.Drawing.Point(3, 11);
-            this.lbTDN.Name = "lbTDN";
-            this.lbTDN.Size = new System.Drawing.Size(124, 19);
-            this.lbTDN.TabIndex = 0;
-            this.lbTDN.Text = "Tên đăng nhập";
-            // 
-            // txtUserName
-            // 
-            this.txtUserName.Location = new System.Drawing.Point(133, 12);
-            this.txtUserName.Name = "txtUserName";
-            this.txtUserName.Size = new System.Drawing.Size(188, 20);
-            this.txtUserName.TabIndex = 1;
+            this.btnDangNhap.Location = new System.Drawing.Point(150, 106);
+            this.btnDangNhap.Name = "btnDangNhap";
+            this.btnDangNhap.Size = new System.Drawing.Size(75, 23);
+            this.btnDangNhap.TabIndex = 2;
+            this.btnDangNhap.Text = "Đăng Nhập";
+            this.btnDangNhap.UseVisualStyleBackColor = true;
+            this.btnDangNhap.Click += new System.EventHandler(this.btnDangNhap_Click);
             // 
             // panel3
             // 
@@ -105,23 +98,31 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Mật khẩu";
             // 
-            // btnDangNhap
+            // panel2
             // 
-            this.btnDangNhap.Location = new System.Drawing.Point(150, 106);
-            this.btnDangNhap.Name = "btnDangNhap";
-            this.btnDangNhap.Size = new System.Drawing.Size(75, 23);
-            this.btnDangNhap.TabIndex = 2;
-            this.btnDangNhap.Text = "Đăng Nhập";
-            this.btnDangNhap.UseVisualStyleBackColor = true;
+            this.panel2.Controls.Add(this.txtUserName);
+            this.panel2.Controls.Add(this.lbTDN);
+            this.panel2.Location = new System.Drawing.Point(3, 3);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(335, 40);
+            this.panel2.TabIndex = 0;
             // 
-            // btnThoat
+            // txtUserName
             // 
-            this.btnThoat.Location = new System.Drawing.Point(249, 106);
-            this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(75, 23);
-            this.btnThoat.TabIndex = 3;
-            this.btnThoat.Text = "Thoát";
-            this.btnThoat.UseVisualStyleBackColor = true;
+            this.txtUserName.Location = new System.Drawing.Point(133, 12);
+            this.txtUserName.Name = "txtUserName";
+            this.txtUserName.Size = new System.Drawing.Size(188, 20);
+            this.txtUserName.TabIndex = 1;
+            // 
+            // lbTDN
+            // 
+            this.lbTDN.AutoSize = true;
+            this.lbTDN.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTDN.Location = new System.Drawing.Point(3, 11);
+            this.lbTDN.Name = "lbTDN";
+            this.lbTDN.Size = new System.Drawing.Size(124, 19);
+            this.lbTDN.TabIndex = 0;
+            this.lbTDN.Text = "Tên đăng nhập";
             // 
             // fmLogin
             // 
@@ -132,10 +133,10 @@
             this.Name = "fmLogin";
             this.Text = "fmLogin";
             this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
