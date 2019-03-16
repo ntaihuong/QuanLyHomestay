@@ -190,6 +190,12 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\VP3.jpg" />
+    <None Include="Resources\TC1.jpg" />
+    <None Include="Resources\PTT.jpg" />
+    <None Include="Resources\NC2.jpg" />
+    <None Include="Resources\NC1.jpg" />
+    <None Include="Resources\đánh giá.png" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
