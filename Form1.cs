@@ -47,5 +47,11 @@ namespace HomestayApp
             fmLogin frm = new fmLogin();
             frm.ShowDialog();
         }
+
+        private void btnDK_Click(object sender, EventArgs e)
+        {
+            fmDangKi frm = new fmDangKi();
+            frm.ShowDialog();
+        }
     }
 }

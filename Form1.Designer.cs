@@ -34,7 +34,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.btnDangNhap = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.btnDK = new System.Windows.Forms.Button();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.lbGo = new System.Windows.Forms.Label();
@@ -109,7 +109,7 @@
             this.splitContainer2.Panel1.BackColor = System.Drawing.Color.White;
             this.splitContainer2.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.splitContainer2.Panel1.Controls.Add(this.btnDangNhap);
-            this.splitContainer2.Panel1.Controls.Add(this.button6);
+            this.splitContainer2.Panel1.Controls.Add(this.btnDK);
             this.splitContainer2.Panel1.Controls.Add(this.dateTimePicker2);
             this.splitContainer2.Panel1.Controls.Add(this.dateTimePicker1);
             this.splitContainer2.Panel1.Controls.Add(this.lbGo);
@@ -136,17 +136,18 @@
             this.btnDangNhap.UseVisualStyleBackColor = true;
             this.btnDangNhap.Click += new System.EventHandler(this.btnDangNhap_Click);
             // 
-            // button6
+            // btnDK
             // 
-            this.button6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button6.BackColor = System.Drawing.Color.Aqua;
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(25, 268);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(88, 41);
-            this.button6.TabIndex = 4;
-            this.button6.Text = "Đăng kí";
-            this.button6.UseVisualStyleBackColor = false;
+            this.btnDK.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnDK.BackColor = System.Drawing.Color.Aqua;
+            this.btnDK.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDK.Location = new System.Drawing.Point(25, 268);
+            this.btnDK.Name = "btnDK";
+            this.btnDK.Size = new System.Drawing.Size(88, 41);
+            this.btnDK.TabIndex = 4;
+            this.btnDK.Text = "Đăng kí";
+            this.btnDK.UseVisualStyleBackColor = false;
+            this.btnDK.Click += new System.EventHandler(this.btnDK_Click);
             // 
             // dateTimePicker2
             // 
@@ -272,7 +273,7 @@
             this.label4.ForeColor = System.Drawing.Color.Blue;
             this.label4.Location = new System.Drawing.Point(38, 10);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(124, 16);
+            this.label4.Size = new System.Drawing.Size(120, 16);
             this.label4.TabIndex = 2;
             this.label4.Text = "Chọn loại phòng";
             // 
@@ -383,7 +384,7 @@
         private System.Windows.Forms.Button button2;
         public System.Windows.Forms.Button btnDanhGia;
         private System.Windows.Forms.Button btnDangNhap;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button btnDK;
         private System.Windows.Forms.BindingSource bindingSource;
     }
 }
