@@ -18,7 +18,7 @@ namespace HomestayApp
             Application.SetCompatibleTextRenderingDefault(false);
 
 
-            Application.Run(new fmDangKi());
+            Application.Run(new fmLogin());
 
             
 

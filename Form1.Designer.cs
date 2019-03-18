@@ -117,7 +117,6 @@
             // 
             // splitContainer2.Panel2
             // 
-            this.splitContainer2.Panel2.BackgroundImage = global::HomestayApp.Properties.Resources.hn300;
             this.splitContainer2.Panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.splitContainer2.Panel2.Controls.Add(this.splitContainer3);
             this.splitContainer2.Size = new System.Drawing.Size(752, 323);
@@ -231,7 +230,6 @@
             this.button5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.Blue;
-            this.button5.Image = global::HomestayApp.Properties.Resources.tải_xuống__1_;
             this.button5.Location = new System.Drawing.Point(358, 200);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(75, 44);
@@ -244,7 +242,6 @@
             this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.Blue;
-            this.button4.Image = global::HomestayApp.Properties.Resources.tải_xuống__1_;
             this.button4.Location = new System.Drawing.Point(358, 134);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 47);
@@ -329,7 +326,6 @@
             this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.Blue;
-            this.button2.Image = global::HomestayApp.Properties.Resources.tải_xuống__1_;
             this.button2.Location = new System.Drawing.Point(318, 10);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(101, 35);
