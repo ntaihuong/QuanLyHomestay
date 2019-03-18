@@ -58,7 +58,7 @@
             // 
             // panel6
             // 
-            this.panel6.BackColor = System.Drawing.Color.Turquoise;
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.panel6.Controls.Add(this.txtXNMK);
             this.panel6.Controls.Add(this.lbXNMK);
             this.panel6.Location = new System.Drawing.Point(64, 416);
@@ -78,8 +78,9 @@
             // lbXNMK
             // 
             this.lbXNMK.AutoSize = true;
-            this.lbXNMK.BackColor = System.Drawing.Color.Turquoise;
+            this.lbXNMK.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.lbXNMK.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbXNMK.ForeColor = System.Drawing.Color.White;
             this.lbXNMK.Location = new System.Drawing.Point(5, 14);
             this.lbXNMK.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lbXNMK.Name = "lbXNMK";
@@ -89,7 +90,7 @@
             // 
             // panel7
             // 
-            this.panel7.BackColor = System.Drawing.Color.Turquoise;
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.panel7.Controls.Add(this.txtMatKhau);
             this.panel7.Controls.Add(this.lbMhatkhau);
             this.panel7.Location = new System.Drawing.Point(64, 359);
@@ -109,8 +110,9 @@
             // lbMhatkhau
             // 
             this.lbMhatkhau.AutoSize = true;
-            this.lbMhatkhau.BackColor = System.Drawing.Color.Turquoise;
+            this.lbMhatkhau.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.lbMhatkhau.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbMhatkhau.ForeColor = System.Drawing.Color.White;
             this.lbMhatkhau.Location = new System.Drawing.Point(5, 14);
             this.lbMhatkhau.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lbMhatkhau.Name = "lbMhatkhau";
@@ -120,7 +122,7 @@
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.Turquoise;
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.panel4.Controls.Add(this.txtTaikhoan);
             this.panel4.Controls.Add(this.lbTaikhoan);
             this.panel4.Location = new System.Drawing.Point(64, 303);
@@ -140,18 +142,20 @@
             // lbTaikhoan
             // 
             this.lbTaikhoan.AutoSize = true;
-            this.lbTaikhoan.BackColor = System.Drawing.Color.Turquoise;
+            this.lbTaikhoan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.lbTaikhoan.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTaikhoan.ForeColor = System.Drawing.Color.White;
             this.lbTaikhoan.Location = new System.Drawing.Point(5, 14);
             this.lbTaikhoan.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lbTaikhoan.Name = "lbTaikhoan";
             this.lbTaikhoan.Size = new System.Drawing.Size(62, 16);
             this.lbTaikhoan.TabIndex = 0;
             this.lbTaikhoan.Text = "Tài khoản";
+            
             // 
             // panel5
             // 
-            this.panel5.BackColor = System.Drawing.Color.Turquoise;
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.panel5.Controls.Add(this.txtPhone);
             this.panel5.Controls.Add(this.lbPhone);
             this.panel5.Location = new System.Drawing.Point(64, 246);
@@ -171,8 +175,9 @@
             // lbPhone
             // 
             this.lbPhone.AutoSize = true;
-            this.lbPhone.BackColor = System.Drawing.Color.Turquoise;
+            this.lbPhone.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.lbPhone.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPhone.ForeColor = System.Drawing.Color.White;
             this.lbPhone.Location = new System.Drawing.Point(5, 14);
             this.lbPhone.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lbPhone.Name = "lbPhone";
@@ -207,7 +212,7 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.Turquoise;
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.panel3.Controls.Add(this.txtEmail);
             this.panel3.Controls.Add(this.lbEmail);
             this.panel3.Location = new System.Drawing.Point(64, 189);
@@ -227,8 +232,9 @@
             // lbEmail
             // 
             this.lbEmail.AutoSize = true;
-            this.lbEmail.BackColor = System.Drawing.Color.Turquoise;
+            this.lbEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.lbEmail.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbEmail.ForeColor = System.Drawing.Color.White;
             this.lbEmail.Location = new System.Drawing.Point(5, 14);
             this.lbEmail.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lbEmail.Name = "lbEmail";
@@ -238,7 +244,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.Turquoise;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.panel2.Controls.Add(this.txtHoten);
             this.panel2.Controls.Add(this.lbHoten);
             this.panel2.Location = new System.Drawing.Point(64, 133);
@@ -258,8 +264,9 @@
             // lbHoten
             // 
             this.lbHoten.AutoSize = true;
-            this.lbHoten.BackColor = System.Drawing.Color.Turquoise;
+            this.lbHoten.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.lbHoten.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbHoten.ForeColor = System.Drawing.Color.White;
             this.lbHoten.Location = new System.Drawing.Point(5, 14);
             this.lbHoten.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lbHoten.Name = "lbHoten";
