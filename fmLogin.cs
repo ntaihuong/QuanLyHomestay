@@ -49,6 +49,5 @@ namespace HomestayApp
             Application.Exit();
         }
 
-      
     }
 }
