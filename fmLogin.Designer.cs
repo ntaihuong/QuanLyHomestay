@@ -137,6 +137,7 @@
             // 
             this.pictureBox1.BackgroundImage = global::HomestayApp.Properties.Resources.login;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.ErrorImage = null;
             this.pictureBox1.Location = new System.Drawing.Point(-4, 1);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(198, 197);

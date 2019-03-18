@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.txtXNMK = new System.Windows.Forms.TextBox();
             this.lbXNMK = new System.Windows.Forms.Label();
@@ -49,7 +48,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.txtHoten = new System.Windows.Forms.TextBox();
             this.lbHoten = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -58,37 +56,20 @@
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.panel1.Controls.Add(this.panel6);
-            this.panel1.Controls.Add(this.panel7);
-            this.panel1.Controls.Add(this.panel4);
-            this.panel1.Controls.Add(this.panel5);
-            this.panel1.Controls.Add(this.btnThoat);
-            this.panel1.Controls.Add(this.btnDangKi);
-            this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Location = new System.Drawing.Point(26, 14);
-            this.panel1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(512, 418);
-            this.panel1.TabIndex = 1;
-            // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.Turquoise;
             this.panel6.Controls.Add(this.txtXNMK);
             this.panel6.Controls.Add(this.lbXNMK);
-            this.panel6.Location = new System.Drawing.Point(5, 287);
+            this.panel6.Location = new System.Drawing.Point(64, 416);
             this.panel6.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(503, 49);
-            this.panel6.TabIndex = 7;
+            this.panel6.Size = new System.Drawing.Size(436, 49);
+            this.panel6.TabIndex = 15;
             // 
             // txtXNMK
             // 
-            this.txtXNMK.Location = new System.Drawing.Point(199, 15);
+            this.txtXNMK.Location = new System.Drawing.Point(147, 14);
             this.txtXNMK.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txtXNMK.Name = "txtXNMK";
             this.txtXNMK.Size = new System.Drawing.Size(279, 22);
@@ -111,15 +92,15 @@
             this.panel7.BackColor = System.Drawing.Color.Turquoise;
             this.panel7.Controls.Add(this.txtMatKhau);
             this.panel7.Controls.Add(this.lbMhatkhau);
-            this.panel7.Location = new System.Drawing.Point(5, 230);
+            this.panel7.Location = new System.Drawing.Point(64, 359);
             this.panel7.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(503, 49);
-            this.panel7.TabIndex = 6;
+            this.panel7.Size = new System.Drawing.Size(436, 49);
+            this.panel7.TabIndex = 14;
             // 
             // txtMatKhau
             // 
-            this.txtMatKhau.Location = new System.Drawing.Point(199, 15);
+            this.txtMatKhau.Location = new System.Drawing.Point(147, 11);
             this.txtMatKhau.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txtMatKhau.Name = "txtMatKhau";
             this.txtMatKhau.Size = new System.Drawing.Size(279, 22);
@@ -142,15 +123,15 @@
             this.panel4.BackColor = System.Drawing.Color.Turquoise;
             this.panel4.Controls.Add(this.txtTaikhoan);
             this.panel4.Controls.Add(this.lbTaikhoan);
-            this.panel4.Location = new System.Drawing.Point(5, 174);
+            this.panel4.Location = new System.Drawing.Point(64, 303);
             this.panel4.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(503, 49);
-            this.panel4.TabIndex = 5;
+            this.panel4.Size = new System.Drawing.Size(436, 49);
+            this.panel4.TabIndex = 13;
             // 
             // txtTaikhoan
             // 
-            this.txtTaikhoan.Location = new System.Drawing.Point(199, 15);
+            this.txtTaikhoan.Location = new System.Drawing.Point(147, 11);
             this.txtTaikhoan.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txtTaikhoan.Name = "txtTaikhoan";
             this.txtTaikhoan.Size = new System.Drawing.Size(279, 22);
@@ -173,15 +154,15 @@
             this.panel5.BackColor = System.Drawing.Color.Turquoise;
             this.panel5.Controls.Add(this.txtPhone);
             this.panel5.Controls.Add(this.lbPhone);
-            this.panel5.Location = new System.Drawing.Point(5, 117);
+            this.panel5.Location = new System.Drawing.Point(64, 246);
             this.panel5.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(503, 49);
-            this.panel5.TabIndex = 4;
+            this.panel5.Size = new System.Drawing.Size(436, 49);
+            this.panel5.TabIndex = 12;
             // 
             // txtPhone
             // 
-            this.txtPhone.Location = new System.Drawing.Point(199, 15);
+            this.txtPhone.Location = new System.Drawing.Point(147, 11);
             this.txtPhone.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.Size = new System.Drawing.Size(279, 22);
@@ -203,11 +184,11 @@
             // 
             this.btnThoat.BackColor = System.Drawing.Color.White;
             this.btnThoat.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThoat.Location = new System.Drawing.Point(283, 361);
+            this.btnThoat.Location = new System.Drawing.Point(325, 487);
             this.btnThoat.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(113, 37);
-            this.btnThoat.TabIndex = 3;
+            this.btnThoat.Size = new System.Drawing.Size(72, 37);
+            this.btnThoat.TabIndex = 11;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = false;
             // 
@@ -215,11 +196,11 @@
             // 
             this.btnDangKi.BackColor = System.Drawing.Color.White;
             this.btnDangKi.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDangKi.Location = new System.Drawing.Point(118, 361);
+            this.btnDangKi.Location = new System.Drawing.Point(160, 487);
             this.btnDangKi.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.btnDangKi.Name = "btnDangKi";
-            this.btnDangKi.Size = new System.Drawing.Size(113, 37);
-            this.btnDangKi.TabIndex = 2;
+            this.btnDangKi.Size = new System.Drawing.Size(72, 37);
+            this.btnDangKi.TabIndex = 10;
             this.btnDangKi.Text = "Đăng Ký";
             this.btnDangKi.UseVisualStyleBackColor = false;
             // 
@@ -228,15 +209,15 @@
             this.panel3.BackColor = System.Drawing.Color.Turquoise;
             this.panel3.Controls.Add(this.txtEmail);
             this.panel3.Controls.Add(this.lbEmail);
-            this.panel3.Location = new System.Drawing.Point(5, 60);
+            this.panel3.Location = new System.Drawing.Point(64, 189);
             this.panel3.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(503, 49);
-            this.panel3.TabIndex = 1;
+            this.panel3.Size = new System.Drawing.Size(436, 49);
+            this.panel3.TabIndex = 9;
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(199, 15);
+            this.txtEmail.Location = new System.Drawing.Point(147, 14);
             this.txtEmail.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(279, 22);
@@ -259,15 +240,15 @@
             this.panel2.BackColor = System.Drawing.Color.Turquoise;
             this.panel2.Controls.Add(this.txtHoten);
             this.panel2.Controls.Add(this.lbHoten);
-            this.panel2.Location = new System.Drawing.Point(5, 4);
+            this.panel2.Location = new System.Drawing.Point(64, 133);
             this.panel2.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(503, 49);
-            this.panel2.TabIndex = 0;
+            this.panel2.Size = new System.Drawing.Size(436, 49);
+            this.panel2.TabIndex = 8;
             // 
             // txtHoten
             // 
-            this.txtHoten.Location = new System.Drawing.Point(199, 15);
+            this.txtHoten.Location = new System.Drawing.Point(147, 14);
             this.txtHoten.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txtHoten.Name = "txtHoten";
             this.txtHoten.Size = new System.Drawing.Size(279, 22);
@@ -290,14 +271,21 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.BackgroundImage = global::HomestayApp.Properties.Resources.dk;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(544, 439);
-            this.Controls.Add(this.panel1);
+            this.ClientSize = new System.Drawing.Size(544, 535);
+            this.Controls.Add(this.panel6);
+            this.Controls.Add(this.panel7);
+            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.panel5);
+            this.Controls.Add(this.btnThoat);
+            this.Controls.Add(this.btnDangKi);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel2);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.Name = "fmDangKi";
             this.Text = "fmDangKi";
-            this.panel1.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             this.panel7.ResumeLayout(false);
@@ -316,7 +304,6 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.TextBox txtXNMK;
         private System.Windows.Forms.Label lbXNMK;
