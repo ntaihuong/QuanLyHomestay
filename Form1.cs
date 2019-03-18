@@ -24,11 +24,13 @@ namespace HomestayApp
             comboBox2.SelectedValueChanged += comboBox2_SelectedValueChanged;
 
         }
+
         public void init()
         {
             comboBox2.DataSource = (from i in db.LOAIPHONGs select i.MaLoaiPhong).ToList();
             comboBox2.DisplayMember = "TenLoaiPhong";
         }
+
         void comboBox2_SelectedValueChanged(object sender, EventArgs e)
         {
             if (comboBox2.SelectedValue != null)
@@ -45,7 +47,5 @@ namespace HomestayApp
             fmLogin frm = new fmLogin();
             frm.ShowDialog();
         }
-
-    
     }
 }
