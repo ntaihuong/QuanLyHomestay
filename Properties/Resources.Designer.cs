@@ -93,6 +93,16 @@ namespace HomestayApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap giấy {
+            get {
+                object obj = ResourceManager.GetObject("giấy", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap glowing_light_blue_abstract_programming_code_background_on_dark_software_or_script_development_concept_rgg0rnttyl_thumbnail_full01 {
             get {
                 object obj = ResourceManager.GetObject("glowing-light-blue-abstract-programming-code-background-on-dark-software-or-scrip" +
