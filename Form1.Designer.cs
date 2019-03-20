@@ -40,15 +40,11 @@
             this.lbGo = new System.Windows.Forms.Label();
             this.lbCome = new System.Windows.Forms.Label();
             this.splitContainer3 = new System.Windows.Forms.SplitContainer();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnDatPhong = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.bindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.btnDanhGia = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -128,9 +124,9 @@
             this.btnDangNhap.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnDangNhap.BackColor = System.Drawing.Color.Aqua;
             this.btnDangNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDangNhap.Location = new System.Drawing.Point(134, 266);
+            this.btnDangNhap.Location = new System.Drawing.Point(134, 269);
             this.btnDangNhap.Name = "btnDangNhap";
-            this.btnDangNhap.Size = new System.Drawing.Size(88, 43);
+            this.btnDangNhap.Size = new System.Drawing.Size(88, 40);
             this.btnDangNhap.TabIndex = 5;
             this.btnDangNhap.Text = "Đăng nhập";
             this.btnDangNhap.UseVisualStyleBackColor = true;
@@ -210,9 +206,6 @@
             // splitContainer3.Panel1
             // 
             this.splitContainer3.Panel1.BackColor = System.Drawing.Color.White;
-            this.splitContainer3.Panel1.Controls.Add(this.button5);
-            this.splitContainer3.Panel1.Controls.Add(this.button4);
-            this.splitContainer3.Panel1.Controls.Add(this.button3);
             this.splitContainer3.Panel1.Controls.Add(this.label4);
             this.splitContainer3.Panel1.Controls.Add(this.pictureBox1);
             this.splitContainer3.Panel1.Controls.Add(this.comboBox2);
@@ -220,48 +213,23 @@
             // splitContainer3.Panel2
             // 
             this.splitContainer3.Panel2.BackColor = System.Drawing.Color.White;
-            this.splitContainer3.Panel2.Controls.Add(this.btnDanhGia);
-            this.splitContainer3.Panel2.Controls.Add(this.button2);
+            this.splitContainer3.Panel2.Controls.Add(this.btnDatPhong);
             this.splitContainer3.Size = new System.Drawing.Size(498, 323);
             this.splitContainer3.SplitterDistance = 262;
             this.splitContainer3.TabIndex = 0;
             // 
-            // button5
+            // btnDatPhong
             // 
-            this.button5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.Blue;
-            this.button5.Location = new System.Drawing.Point(358, 200);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 44);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "Hủy phòng";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.Blue;
-            this.button4.Location = new System.Drawing.Point(358, 134);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 47);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "Đổi phòng";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button3.BackColor = System.Drawing.Color.MistyRose;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.Blue;
-            this.button3.Location = new System.Drawing.Point(358, 59);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(82, 45);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Đặt phòng";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnDatPhong.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnDatPhong.BackColor = System.Drawing.Color.MistyRose;
+            this.btnDatPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDatPhong.ForeColor = System.Drawing.Color.Blue;
+            this.btnDatPhong.Location = new System.Drawing.Point(413, 3);
+            this.btnDatPhong.Name = "btnDatPhong";
+            this.btnDatPhong.Size = new System.Drawing.Size(82, 45);
+            this.btnDatPhong.TabIndex = 3;
+            this.btnDatPhong.Text = "Đặt phòng";
+            this.btnDatPhong.UseVisualStyleBackColor = false;
             // 
             // label4
             // 
@@ -286,7 +254,7 @@
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox1.Location = new System.Drawing.Point(50, 59);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(302, 200);
+            this.pictureBox1.Size = new System.Drawing.Size(402, 200);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -308,31 +276,6 @@
             // bindingSource
             // 
             this.bindingSource.DataSource = typeof(HomestayApp.LOAIPHONG);
-            // 
-            // btnDanhGia
-            // 
-            this.btnDanhGia.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnDanhGia.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDanhGia.ForeColor = System.Drawing.Color.Blue;
-            this.btnDanhGia.Location = new System.Drawing.Point(110, 10);
-            this.btnDanhGia.Name = "btnDanhGia";
-            this.btnDanhGia.Size = new System.Drawing.Size(100, 35);
-            this.btnDanhGia.TabIndex = 0;
-            this.btnDanhGia.Text = "Đánh giá";
-            this.btnDanhGia.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.btnDanhGia.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.Blue;
-            this.button2.Location = new System.Drawing.Point(318, 10);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(101, 35);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Thanh toán";
-            this.button2.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -375,14 +318,10 @@
         private System.Windows.Forms.Label lbGo;
         private System.Windows.Forms.Label lbCome;
         private System.Windows.Forms.SplitContainer splitContainer3;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnDatPhong;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.Button button2;
-        public System.Windows.Forms.Button btnDanhGia;
         private System.Windows.Forms.Button btnDangNhap;
         private System.Windows.Forms.Button btnDK;
         private System.Windows.Forms.BindingSource bindingSource;

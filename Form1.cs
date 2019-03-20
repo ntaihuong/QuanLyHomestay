@@ -20,9 +20,7 @@ namespace HomestayApp
         {
             InitializeComponent();
             init();
-
             comboBox2.SelectedValueChanged += comboBox2_SelectedValueChanged;
-
         }
 
         public void init()
@@ -36,7 +34,6 @@ namespace HomestayApp
             if (comboBox2.SelectedValue != null)
             {
                 string pathI=path+ "\\Resources\\" + comboBox2.SelectedValue.ToString() + extention;
-
                 Bitmap bm = new Bitmap(pathI);
                 pictureBox1.Image = bm;
             }
