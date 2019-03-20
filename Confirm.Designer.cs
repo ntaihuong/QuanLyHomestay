@@ -43,7 +43,10 @@
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.btnXoa = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.lOAIPHONGBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lOAIPHONGBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -169,12 +172,29 @@
             this.textBox1.Size = new System.Drawing.Size(293, 20);
             this.textBox1.TabIndex = 8;
             // 
+            // comboBox1
+            // 
+            this.comboBox1.DataSource = this.lOAIPHONGBindingSource;
+            this.comboBox1.DisplayMember = "TenLoaiPhong";
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(124, 19);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(293, 21);
+            this.comboBox1.TabIndex = 14;
+            this.comboBox1.ValueMember = "MaLoaiPhong";
+            this.comboBox1.Visible = false;
+            // 
+            // lOAIPHONGBindingSource
+            // 
+            this.lOAIPHONGBindingSource.DataSource = typeof(HomestayApp.LOAIPHONG);
+            // 
             // Confirm
             // 
             this.AcceptButton = this.btnXacNhan;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(429, 361);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.textBox4);
@@ -191,6 +211,7 @@
             this.Name = "Confirm";
             this.Text = "Xác Nhận Đặt Phòng";
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lOAIPHONGBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -212,5 +233,7 @@
         private System.Windows.Forms.BindingSource bindingSource1;
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.BindingSource lOAIPHONGBindingSource;
     }
 }

@@ -19,6 +19,7 @@ namespace HomestayApp
         {
             InitializeComponent();
             db = new QuanLyHomestayEntities();
+            lOAIPHONGBindingSource.DataSource = db.LOAIPHONGs.ToList();
             if(status.Equals("add"))
             {
                 bindingSource1.DataSource = obj;
@@ -31,21 +32,21 @@ namespace HomestayApp
             {
                 bindingSource1.DataSource = obj;
                 hd = obj;
-                db.HOADONs.Attach(hd);
-                LOAIPHONG p = (from i in db.LOAIPHONGs where i.MaLoaiPhong == obj.MaLoaiPhong select i).FirstOrDefault();
+                db.HOADONs.Attach(hd);              
                 unlock();
-                textBox1.Text = p.TenLoaiPhong;
                 this.status = status;
             }
         }
         private void unlock()
         {
-            textBox1.ReadOnly = true;
+            textBox1.Enabled = false;
+            textBox1.Visible = false;
             textBox2.ReadOnly = false;
             textBox3.ReadOnly = false;
             textBox4.ReadOnly = false;
             textBox5.ReadOnly = false;
             btnXoa.Visible = true;
+            comboBox1.Visible = true;
         }
         private void btnHuy_Click(object sender, EventArgs e)
         {
@@ -57,7 +58,11 @@ namespace HomestayApp
             if(status.Equals("add"))
             {
                 db.HOADONs.Add(hd);
-            }         
+            }        
+            else
+            {
+                hd.MaLoaiPhong = comboBox1.SelectedValue.ToString();
+            }
             db.SaveChanges();
             this.Close();
         }

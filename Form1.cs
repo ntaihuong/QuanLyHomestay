@@ -68,7 +68,7 @@ namespace HomestayApp
             hd.GiaTien = p.GiaPhong.ToString();
             hd.MaLoaiPhong = MaLoaiPhong;
             hd.DonVi = "VND";
-            hd.MaHoaDon = "MHD"+DateTime.Now.Day+maso.ToString();       
+            hd.MaHoaDon = "MHD"+DateTime.Now.Day;       
             hd.NgayThanhToan = NgayDi;
             hd.StringCode = RandomString(8);
             return hd;
