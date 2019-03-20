@@ -11,7 +11,7 @@ using System.Windows.Forms;
 namespace HomestayApp
 {
     public partial class Form1 : Form
-    { 
+    {
         QuanLyHomestayEntities db = new QuanLyHomestayEntities();
         string extention = ".jpg";
         string path = "C:\\Users\\Huong\\Documents\\GitHub\\QuanLyHomestay";
@@ -40,7 +40,7 @@ namespace HomestayApp
         {
             if (comboBox2.SelectedValue != null)
             {
-                string pathI=path+ "\\Resources\\" + comboBox2.SelectedValue.ToString() + extention;
+                string pathI = path + "\\Resources\\" + comboBox2.SelectedValue.ToString() + extention;
                 Bitmap bm = new Bitmap(pathI);
                 pictureBox1.Image = bm;
             }
@@ -57,7 +57,7 @@ namespace HomestayApp
             fmDangKi frm = new fmDangKi();
             frm.ShowDialog();
         }
-        private HOADON Picked(string MaLoaiPhong,DateTime NgayDen,DateTime NgayDi)
+        private HOADON Picked(string MaLoaiPhong, DateTime NgayDen, DateTime NgayDi)
         {
             int maso = (from i in db.HOADONs select i).Count();
             HOADON hd = new HOADON();
@@ -68,7 +68,7 @@ namespace HomestayApp
             hd.GiaTien = p.GiaPhong.ToString();
             hd.MaLoaiPhong = MaLoaiPhong;
             hd.DonVi = "VND";
-            hd.MaHoaDon = "MHD"+DateTime.Now.Day;       
+            hd.MaHoaDon = "MHD" + DateTime.Now.Day;
             hd.NgayThanhToan = NgayDi;
             hd.StringCode = RandomString(8);
             return hd;
@@ -77,10 +77,10 @@ namespace HomestayApp
         private void btnDatPhong_Click(object sender, EventArgs e)
         {
             HOADON hd = Picked(comboBox2.SelectedValue.ToString(), dateTimePicker1.Value, dateTimePicker2.Value);
-            Confirm fm = new Confirm(hd,"add");
-            if(fm.ShowDialog() == DialogResult.OK)
+            Confirm fm = new Confirm(hd, "add");
+            if (fm.ShowDialog() == DialogResult.OK)
             {
-               
+
             }
         }
 
@@ -90,8 +90,13 @@ namespace HomestayApp
             Confirm fm = new Confirm(hd, "edit");
             if (fm.ShowDialog() == DialogResult.OK)
             {
-                
+
             }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

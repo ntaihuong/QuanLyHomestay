@@ -33,6 +33,8 @@
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.label1 = new System.Windows.Forms.Label();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
+            this.btnSearch = new System.Windows.Forms.PictureBox();
+            this.txtFind = new System.Windows.Forms.TextBox();
             this.btnDangNhap = new System.Windows.Forms.Button();
             this.btnDK = new System.Windows.Forms.Button();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
@@ -45,8 +47,6 @@
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.lOAIPHONGBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.btnDatPhong = new System.Windows.Forms.Button();
-            this.txtFind = new System.Windows.Forms.TextBox();
-            this.btnSearch = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -55,13 +55,13 @@
             this.splitContainer2.Panel1.SuspendLayout();
             this.splitContainer2.Panel2.SuspendLayout();
             this.splitContainer2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnSearch)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer3)).BeginInit();
             this.splitContainer3.Panel1.SuspendLayout();
             this.splitContainer3.Panel2.SuspendLayout();
             this.splitContainer3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lOAIPHONGBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnSearch)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -108,9 +108,9 @@
             this.splitContainer2.Panel1.BackColor = System.Drawing.Color.White;
             this.splitContainer2.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.splitContainer2.Panel1.Controls.Add(this.btnSearch);
-            this.splitContainer2.Panel1.Controls.Add(this.txtFind);
             this.splitContainer2.Panel1.Controls.Add(this.btnDangNhap);
             this.splitContainer2.Panel1.Controls.Add(this.btnDK);
+            this.splitContainer2.Panel1.Controls.Add(this.txtFind);
             this.splitContainer2.Panel1.Controls.Add(this.dateTimePicker2);
             this.splitContainer2.Panel1.Controls.Add(this.dateTimePicker1);
             this.splitContainer2.Panel1.Controls.Add(this.lbGo);
@@ -123,6 +123,25 @@
             this.splitContainer2.Size = new System.Drawing.Size(757, 331);
             this.splitContainer2.SplitterDistance = 251;
             this.splitContainer2.TabIndex = 0;
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.BackgroundImage = global::HomestayApp.Properties.Resources.search;
+            this.btnSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnSearch.Location = new System.Drawing.Point(194, 32);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(41, 30);
+            this.btnSearch.TabIndex = 7;
+            this.btnSearch.TabStop = false;
+ //           this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            // 
+            // txtFind
+            // 
+            this.txtFind.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtFind.Location = new System.Drawing.Point(21, 36);
+            this.txtFind.Name = "txtFind";
+            this.txtFind.Size = new System.Drawing.Size(167, 26);
+            this.txtFind.TabIndex = 6;
             // 
             // btnDangNhap
             // 
@@ -155,7 +174,7 @@
             this.dateTimePicker2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dateTimePicker2.Location = new System.Drawing.Point(12, 151);
+            this.dateTimePicker2.Location = new System.Drawing.Point(21, 207);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(201, 20);
             this.dateTimePicker2.TabIndex = 3;
@@ -165,7 +184,7 @@
             this.dateTimePicker1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(12, 72);
+            this.dateTimePicker1.Location = new System.Drawing.Point(21, 128);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(201, 20);
             this.dateTimePicker1.TabIndex = 2;
@@ -179,7 +198,7 @@
             this.lbGo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.lbGo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lbGo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.lbGo.Location = new System.Drawing.Point(12, 107);
+            this.lbGo.Location = new System.Drawing.Point(21, 163);
             this.lbGo.Name = "lbGo";
             this.lbGo.Size = new System.Drawing.Size(82, 24);
             this.lbGo.TabIndex = 1;
@@ -194,7 +213,7 @@
             this.lbCome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.lbCome.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lbCome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.lbCome.Location = new System.Drawing.Point(12, 32);
+            this.lbCome.Location = new System.Drawing.Point(21, 88);
             this.lbCome.Name = "lbCome";
             this.lbCome.Size = new System.Drawing.Size(101, 24);
             this.lbCome.TabIndex = 0;
@@ -264,7 +283,7 @@
             this.comboBox2.Size = new System.Drawing.Size(406, 21);
             this.comboBox2.TabIndex = 0;
             this.comboBox2.ValueMember = "MaLoaiPhong";
-            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedValueChanged);
+   //         this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedValueChanged);
             // 
             // lOAIPHONGBindingSource
             // 
@@ -282,23 +301,7 @@
             this.btnDatPhong.TabIndex = 3;
             this.btnDatPhong.Text = "Đặt phòng";
             this.btnDatPhong.UseVisualStyleBackColor = false;
-            this.btnDatPhong.Click += new System.EventHandler(this.btnDatPhong_Click);
-            // 
-            // txtFind
-            // 
-            this.txtFind.Location = new System.Drawing.Point(59, 209);
-            this.txtFind.Name = "txtFind";
-            this.txtFind.Size = new System.Drawing.Size(154, 20);
-            this.txtFind.TabIndex = 6;
-            // 
-            // btnSearch
-            // 
-            this.btnSearch.Location = new System.Drawing.Point(12, 209);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(37, 20);
-            this.btnSearch.TabIndex = 7;
-            this.btnSearch.TabStop = false;
-            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+  //          this.btnDatPhong.Click += new System.EventHandler(this.btnDatPhong_Click);
             // 
             // Form1
             // 
@@ -311,6 +314,7 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
@@ -320,6 +324,7 @@
             this.splitContainer2.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
             this.splitContainer2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.btnSearch)).EndInit();
             this.splitContainer3.Panel1.ResumeLayout(false);
             this.splitContainer3.Panel1.PerformLayout();
             this.splitContainer3.Panel2.ResumeLayout(false);
@@ -327,7 +332,6 @@
             this.splitContainer3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lOAIPHONGBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnSearch)).EndInit();
             this.ResumeLayout(false);
 
         }
