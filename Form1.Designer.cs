@@ -34,9 +34,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.btnSearch = new System.Windows.Forms.PictureBox();
-            this.txtFind = new System.Windows.Forms.TextBox();
             this.btnDangNhap = new System.Windows.Forms.Button();
             this.btnDK = new System.Windows.Forms.Button();
+            this.txtFind = new System.Windows.Forms.TextBox();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.lbGo = new System.Windows.Forms.Label();
@@ -133,15 +133,7 @@
             this.btnSearch.Size = new System.Drawing.Size(41, 30);
             this.btnSearch.TabIndex = 7;
             this.btnSearch.TabStop = false;
- //           this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
-            // 
-            // txtFind
-            // 
-            this.txtFind.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txtFind.Location = new System.Drawing.Point(21, 36);
-            this.txtFind.Name = "txtFind";
-            this.txtFind.Size = new System.Drawing.Size(167, 26);
-            this.txtFind.TabIndex = 6;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // btnDangNhap
             // 
@@ -168,6 +160,14 @@
             this.btnDK.Text = "Đăng kí";
             this.btnDK.UseVisualStyleBackColor = false;
             this.btnDK.Click += new System.EventHandler(this.btnDK_Click);
+            // 
+            // txtFind
+            // 
+            this.txtFind.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtFind.Location = new System.Drawing.Point(21, 36);
+            this.txtFind.Name = "txtFind";
+            this.txtFind.Size = new System.Drawing.Size(167, 26);
+            this.txtFind.TabIndex = 6;
             // 
             // dateTimePicker2
             // 
@@ -283,7 +283,6 @@
             this.comboBox2.Size = new System.Drawing.Size(406, 21);
             this.comboBox2.TabIndex = 0;
             this.comboBox2.ValueMember = "MaLoaiPhong";
-   //         this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedValueChanged);
             // 
             // lOAIPHONGBindingSource
             // 
@@ -301,7 +300,7 @@
             this.btnDatPhong.TabIndex = 3;
             this.btnDatPhong.Text = "Đặt phòng";
             this.btnDatPhong.UseVisualStyleBackColor = false;
-  //          this.btnDatPhong.Click += new System.EventHandler(this.btnDatPhong_Click);
+            this.btnDatPhong.Click += new System.EventHandler(this.btnDatPhong_Click);
             // 
             // Form1
             // 
