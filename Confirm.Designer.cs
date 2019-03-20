@@ -119,6 +119,7 @@
             // 
             // textBox2
             // 
+            this.textBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSource1, "NgayDen", true));
             this.textBox2.Location = new System.Drawing.Point(124, 67);
             this.textBox2.Name = "textBox2";
             this.textBox2.ReadOnly = true;
@@ -127,6 +128,7 @@
             // 
             // textBox3
             // 
+            this.textBox3.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSource1, "NgayDi", true));
             this.textBox3.Location = new System.Drawing.Point(124, 119);
             this.textBox3.Name = "textBox3";
             this.textBox3.ReadOnly = true;
@@ -135,6 +137,7 @@
             // 
             // textBox4
             // 
+            this.textBox4.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSource1, "GiaTien", true));
             this.textBox4.Location = new System.Drawing.Point(124, 171);
             this.textBox4.Name = "textBox4";
             this.textBox4.ReadOnly = true;
@@ -143,6 +146,7 @@
             // 
             // textBox5
             // 
+            this.textBox5.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSource1, "SoTienDatTruoc", true));
             this.textBox5.Location = new System.Drawing.Point(124, 229);
             this.textBox5.Name = "textBox5";
             this.textBox5.ReadOnly = true;
@@ -151,7 +155,7 @@
             // 
             // bindingSource1
             // 
-            this.bindingSource1.DataSource = typeof(HomestayApp.PHIEUDANGKI);
+            this.bindingSource1.DataSource = typeof(HomestayApp.HOADON);
             // 
             // Confirm
             // 

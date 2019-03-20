@@ -51,5 +51,25 @@ namespace HomestayApp
             fmDangKi frm = new fmDangKi();
             frm.ShowDialog();
         }
+        private HOADON Picked(string MaLoaiPhong,DateTime NgayDen,DateTime NgayDi)
+        {
+            HOADON hd = new HOADON();
+            hd.NgayDen = NgayDen;
+            hd.NgayDi = NgayDi;
+            hd.SoTienDatTruoc = 0;
+            PHONG p = (from i in db.PHONGs where MaLoaiPhong == i.MaLoaiPhong select i).FirstOrDefault();
+            hd.GiaTien = p.GiaPhong.ToString();
+            hd.MaLoaiPhong = MaLoaiPhong;
+            hd.DonVi = "VND";
+            hd.MaHoaDon = NgayDen.ToString() + NgayDi.ToString();
+            hd.NgayThanhToan = NgayDi;
+            return hd;
+        }
+
+        private void btnDatPhong_Click(object sender, EventArgs e)
+        {
+            Confirm fm = new Confirm(Picked(comboBox2.SelectedValue.ToString(), dateTimePicker1.Value, dateTimePicker2.Value));
+            fm.ShowDialog();
+        }
     }
 }

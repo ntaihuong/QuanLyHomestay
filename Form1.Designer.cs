@@ -43,8 +43,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.btnDatPhong = new System.Windows.Forms.Button();
             this.lOAIPHONGBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.btnDatPhong = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -206,8 +206,8 @@
             // splitContainer3.Panel1
             // 
             this.splitContainer3.Panel1.BackColor = System.Drawing.Color.White;
-            this.splitContainer3.Panel1.Controls.Add(this.label4);
             this.splitContainer3.Panel1.Controls.Add(this.pictureBox1);
+            this.splitContainer3.Panel1.Controls.Add(this.label4);
             this.splitContainer3.Panel1.Controls.Add(this.comboBox2);
             // 
             // splitContainer3.Panel2
@@ -261,6 +261,10 @@
             this.comboBox2.ValueMember = "MaLoaiPhong";
             this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedValueChanged);
             // 
+            // lOAIPHONGBindingSource
+            // 
+            this.lOAIPHONGBindingSource.DataSource = typeof(HomestayApp.LOAIPHONG);
+            // 
             // btnDatPhong
             // 
             this.btnDatPhong.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -273,10 +277,7 @@
             this.btnDatPhong.TabIndex = 3;
             this.btnDatPhong.Text = "Đặt phòng";
             this.btnDatPhong.UseVisualStyleBackColor = false;
-            // 
-            // lOAIPHONGBindingSource
-            // 
-            this.lOAIPHONGBindingSource.DataSource = typeof(HomestayApp.LOAIPHONG);
+            this.btnDatPhong.Click += new System.EventHandler(this.btnDatPhong_Click);
             // 
             // Form1
             // 

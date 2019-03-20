@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="QuanLyHomestayModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="QuanLyHomestayModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="HOADON">
           <Key>
             <PropertyRef Name="MaHoaDon" />
@@ -16,6 +16,7 @@
           <Property Name="NgayDen" Type="smalldatetime" />
           <Property Name="NgayDi" Type="smalldatetime" />
           <Property Name="GiaTien" Type="nchar" MaxLength="50" />
+          <Property Name="MaLoaiPhong" Type="nchar" MaxLength="10" />
         </EntityType>
         <EntityType Name="KHACHHANG">
           <Key>
@@ -87,8 +88,7 @@ warning 6002: The table/view 'QuanLyHomestay.dbo.PHIEUDANGKI' does not have a pr
     FROM [dbo].[PHIEUDANGKI] AS [PHIEUDANGKI]</DefiningQuery>
           </EntitySet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="QuanLyHomestayModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -102,7 +102,8 @@ warning 6002: The table/view 'QuanLyHomestay.dbo.PHIEUDANGKI' does not have a pr
           <Property Name="DonVi" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
           <Property Name="NgayDen" Type="DateTime" Precision="0" />
           <Property Name="NgayDi" Type="DateTime" Precision="0" />
-          <Property Name="GiaTien" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+          <Property Name="GiaTien" Type="String" MaxLength="50" Unicode="true" FixedLength="true" />
+          <Property Name="MaLoaiPhong" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
         </EntityType>
         <EntityType Name="KHACHHANG">
           <Key>
@@ -173,6 +174,7 @@ warning 6002: The table/view 'QuanLyHomestay.dbo.PHIEUDANGKI' does not have a pr
           <EntitySetMapping Name="HOADONs">
             <EntityTypeMapping TypeName="QuanLyHomestayModel.HOADON">
               <MappingFragment StoreEntitySet="HOADON">
+                <ScalarProperty Name="MaLoaiPhong" ColumnName="MaLoaiPhong" />
                 <ScalarProperty Name="MaHoaDon" ColumnName="MaHoaDon" />
                 <ScalarProperty Name="NgayThanhToan" ColumnName="NgayThanhToan" />
                 <ScalarProperty Name="SoTienDatTruoc" ColumnName="SoTienDatTruoc" />
