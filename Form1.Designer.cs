@@ -133,6 +133,10 @@
             this.btnSearch.Size = new System.Drawing.Size(41, 30);
             this.btnSearch.TabIndex = 7;
             this.btnSearch.TabStop = false;
+<<<<<<< HEAD
+=======
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+>>>>>>> 58f7b8931bef30f084556a5ac942d611e57bebdc
             // 
             // btnDangNhap
             // 
@@ -162,10 +166,17 @@
             // 
             // txtFind
             // 
+<<<<<<< HEAD
             this.txtFind.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.txtFind.Location = new System.Drawing.Point(25, 32);
             this.txtFind.Name = "txtFind";
             this.txtFind.Size = new System.Drawing.Size(167, 22);
+=======
+            this.txtFind.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtFind.Location = new System.Drawing.Point(21, 36);
+            this.txtFind.Name = "txtFind";
+            this.txtFind.Size = new System.Drawing.Size(167, 26);
+>>>>>>> 58f7b8931bef30f084556a5ac942d611e57bebdc
             this.txtFind.TabIndex = 6;
             // 
             // dateTimePicker2
@@ -299,6 +310,10 @@
             this.btnDatPhong.TabIndex = 3;
             this.btnDatPhong.Text = "Đặt phòng";
             this.btnDatPhong.UseVisualStyleBackColor = false;
+<<<<<<< HEAD
+=======
+            this.btnDatPhong.Click += new System.EventHandler(this.btnDatPhong_Click);
+>>>>>>> 58f7b8931bef30f084556a5ac942d611e57bebdc
             // 
             // Form1
             // 
