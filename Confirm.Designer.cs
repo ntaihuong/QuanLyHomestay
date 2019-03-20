@@ -38,10 +38,10 @@
             this.btnXacNhan = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
-            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -97,8 +97,9 @@
             this.btnHuy.Name = "btnHuy";
             this.btnHuy.Size = new System.Drawing.Size(75, 23);
             this.btnHuy.TabIndex = 6;
-            this.btnHuy.Text = "button1";
+            this.btnHuy.Text = "Hủy";
             this.btnHuy.UseVisualStyleBackColor = true;
+            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
             // 
             // btnXacNhan
             // 
@@ -106,7 +107,7 @@
             this.btnXacNhan.Name = "btnXacNhan";
             this.btnXacNhan.Size = new System.Drawing.Size(75, 23);
             this.btnXacNhan.TabIndex = 7;
-            this.btnXacNhan.Text = "button2";
+            this.btnXacNhan.Text = "Xác Nhận";
             this.btnXacNhan.UseVisualStyleBackColor = true;
             // 
             // textBox1
@@ -125,6 +126,10 @@
             this.textBox2.ReadOnly = true;
             this.textBox2.Size = new System.Drawing.Size(293, 20);
             this.textBox2.TabIndex = 9;
+            // 
+            // bindingSource1
+            // 
+            this.bindingSource1.DataSource = typeof(HomestayApp.HOADON);
             // 
             // textBox3
             // 
@@ -152,10 +157,6 @@
             this.textBox5.ReadOnly = true;
             this.textBox5.Size = new System.Drawing.Size(293, 20);
             this.textBox5.TabIndex = 12;
-            // 
-            // bindingSource1
-            // 
-            this.bindingSource1.DataSource = typeof(HomestayApp.HOADON);
             // 
             // Confirm
             // 
