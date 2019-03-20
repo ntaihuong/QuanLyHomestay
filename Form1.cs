@@ -26,8 +26,8 @@ namespace HomestayApp
         public void init()
         {
             lOAIPHONGBindingSource.DataSource = (from i in db.LOAIPHONGs select i).ToList();
-            //comboBox2.DataSource = (from i in db.LOAIPHONGs select i.MaLoaiPhong).ToList();
-            //comboBox2.DisplayMember = "TenLoaiPhong";
+            comboBox2.DataSource = (from i in db.LOAIPHONGs select i.MaLoaiPhong).ToList();
+            comboBox2.DisplayMember = "TenLoaiPhong";
         }
 
         void comboBox2_SelectedValueChanged(object sender, EventArgs e)
