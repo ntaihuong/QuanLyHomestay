@@ -22,6 +22,9 @@ namespace HomestayApp
             Application.Exit();
         }
 
-      
+        private void lbTaikhoan_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
