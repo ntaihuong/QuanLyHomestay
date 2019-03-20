@@ -41,8 +41,8 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
-            this.bindingSourceHoaDon = new System.Windows.Forms.BindingSource(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceHoaDon)).BeginInit();
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -149,9 +149,9 @@
             this.textBox5.Size = new System.Drawing.Size(293, 20);
             this.textBox5.TabIndex = 12;
             // 
-            // bindingSourceHoaDon
+            // bindingSource1
             // 
-            this.bindingSourceHoaDon.DataSource = typeof(HomestayApp.HOADON);
+            this.bindingSource1.DataSource = typeof(HomestayApp.PHIEUDANGKI);
             // 
             // Confirm
             // 
@@ -173,7 +173,7 @@
             this.Name = "Confirm";
             this.Text = "Xác Nhận Đặt Phòng";
             this.Load += new System.EventHandler(this.Confirm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceHoaDon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -193,6 +193,6 @@
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.BindingSource bindingSourceHoaDon;
+        private System.Windows.Forms.BindingSource bindingSource1;
     }
 }

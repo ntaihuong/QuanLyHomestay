@@ -16,9 +16,8 @@ namespace HomestayApp
     {
         public string MaPhieuDangKi { get; set; }
         public string MaKhachHang { get; set; }
-        public Nullable<System.DateTime> NgayLap { get; set; }
-        public Nullable<System.DateTime> NgayDi { get; set; }
         public string MaLoaiPhong { get; set; }
         public Nullable<System.DateTime> NgayDen { get; set; }
+        public Nullable<System.DateTime> NgayDi { get; set; }
     }
 }

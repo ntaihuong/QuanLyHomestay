@@ -4,13 +4,13 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="876af5e8426940babe4efdc0f38d62d6" Name="Diagram1">
+      <Diagram DiagramId="127c30bb66ea449e9b4123de842858af" Name="Diagram1">
         <EntityTypeShape EntityType="QuanLyHomestayModel.HOADON" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="QuanLyHomestayModel.KHACHHANG" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="QuanLyHomestayModel.LOAIPHONG" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="QuanLyHomestayModel.PHIEUDANGKI" Width="1.5" PointX="0.75" PointY="4.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="QuanLyHomestayModel.PHONG" Width="1.5" PointX="2.75" PointY="4.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="QuanLyHomestayModel.TAIKHOAN" Width="1.5" PointX="5.375" PointY="3.75" />
+        <EntityTypeShape EntityType="QuanLyHomestayModel.PHONG" Width="1.5" PointX="0.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyHomestayModel.TAIKHOAN" Width="1.5" PointX="2.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyHomestayModel.PHIEUDANGKI" Width="1.5" PointX="4.75" PointY="3.75" IsExpanded="true" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

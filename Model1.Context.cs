@@ -28,8 +28,8 @@ namespace HomestayApp
         public virtual DbSet<HOADON> HOADONs { get; set; }
         public virtual DbSet<KHACHHANG> KHACHHANGs { get; set; }
         public virtual DbSet<LOAIPHONG> LOAIPHONGs { get; set; }
-        public virtual DbSet<PHIEUDANGKI> PHIEUDANGKIs { get; set; }
         public virtual DbSet<PHONG> PHONGs { get; set; }
         public virtual DbSet<TAIKHOAN> TAIKHOANs { get; set; }
+        public virtual DbSet<PHIEUDANGKI> PHIEUDANGKIs { get; set; }
     }
 }

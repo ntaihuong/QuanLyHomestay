@@ -16,7 +16,7 @@ namespace HomestayApp
         public Confirm(HOADON obj)
         {
             InitializeComponent();
-            bindingSourceHoaDon.DataSource = obj;
+            bindingSource1.DataSource = obj;
         }
 
         private void label1_Click(object sender, EventArgs e)

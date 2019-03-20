@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-    <Schema Namespace="QuanLyHomestayModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="QuanLyHomestayModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="HOADON">
           <Key>
             <PropertyRef Name="MaHoaDon" />
@@ -42,7 +42,7 @@ warning 6002: The table/view 'QuanLyHomestay.dbo.PHIEUDANGKI' does not have a pr
         <EntityType Name="PHIEUDANGKI">
           <Key>
             <PropertyRef Name="MaPhieuDangKi" />
-            
+            <PropertyRef Name="MaKhachHang" />
           </Key>
           <Property Name="MaPhieuDangKi" Type="varchar" MaxLength="6" Nullable="false" />
           <Property Name="MaKhachHang" Type="nvarchar" MaxLength="5" Nullable="false" />
@@ -87,7 +87,8 @@ warning 6002: The table/view 'QuanLyHomestay.dbo.PHIEUDANGKI' does not have a pr
     FROM [dbo].[PHIEUDANGKI] AS [PHIEUDANGKI]</DefiningQuery>
           </EntitySet>
         </EntityContainer>
-      </Schema></edmx:StorageModels>
+      </Schema>
+    </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="QuanLyHomestayModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -123,17 +124,6 @@ warning 6002: The table/view 'QuanLyHomestay.dbo.PHIEUDANGKI' does not have a pr
           <Property Name="TenLoaiPhong" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
           <Property Name="TrangBi" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
         </EntityType>
-        <EntityType Name="PHIEUDANGKI">
-          <Key>
-            <PropertyRef Name="MaPhieuDangKi" />
-          </Key>
-          <Property Name="MaPhieuDangKi" Type="String" MaxLength="6" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="MaKhachHang" Type="String" MaxLength="5" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="NgayLap" Type="DateTime" Precision="0" />
-          <Property Name="NgayDi" Type="DateTime" Precision="0" />
-          <Property Name="MaLoaiPhong" Type="String" MaxLength="6" FixedLength="false" Unicode="false" />
-          <Property Name="NgayDen" Type="DateTime" Precision="0" />
-        </EntityType>
         <EntityType Name="PHONG">
           <Key>
             <PropertyRef Name="MaPhong" />
@@ -145,14 +135,6 @@ warning 6002: The table/view 'QuanLyHomestay.dbo.PHIEUDANGKI' does not have a pr
           <Property Name="GiaPhong" Type="Int32" />
           <Property Name="DonVi" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
         </EntityType>
-        <EntityContainer Name="QuanLyHomestayEntities" annotation:LazyLoadingEnabled="true">
-          <EntitySet Name="HOADONs" EntityType="Self.HOADON" />
-          <EntitySet Name="KHACHHANGs" EntityType="Self.KHACHHANG" />
-          <EntitySet Name="LOAIPHONGs" EntityType="Self.LOAIPHONG" />
-          <EntitySet Name="PHIEUDANGKIs" EntityType="Self.PHIEUDANGKI" />
-          <EntitySet Name="PHONGs" EntityType="Self.PHONG" />
-          <EntitySet Name="TAIKHOANs" EntityType="QuanLyHomestayModel.TAIKHOAN" />
-        </EntityContainer>
         <EntityType Name="TAIKHOAN">
           <Key>
             <PropertyRef Name="TaiKhoan1" />
@@ -160,9 +142,28 @@ warning 6002: The table/view 'QuanLyHomestay.dbo.PHIEUDANGKI' does not have a pr
           <Property Name="HoTen" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="Phone" Type="Int32" />
-          <Property Name="TaiKhoan1" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="TaiKhoan1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="Matkhau" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
         </EntityType>
+        <EntityType Name="PHIEUDANGKI">
+          <Key>
+            <PropertyRef Name="MaPhieuDangKi" />
+            <PropertyRef Name="MaKhachHang" />
+          </Key>
+          <Property Name="MaPhieuDangKi" Type="String" MaxLength="6" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="MaKhachHang" Type="String" MaxLength="5" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MaLoaiPhong" Type="String" MaxLength="6" FixedLength="false" Unicode="false" />
+          <Property Name="NgayDen" Type="DateTime" Precision="0" />
+          <Property Name="NgayDi" Type="DateTime" Precision="0" />
+        </EntityType>
+        <EntityContainer Name="QuanLyHomestayEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="HOADONs" EntityType="Self.HOADON" />
+          <EntitySet Name="KHACHHANGs" EntityType="Self.KHACHHANG" />
+          <EntitySet Name="LOAIPHONGs" EntityType="Self.LOAIPHONG" />
+          <EntitySet Name="PHONGs" EntityType="Self.PHONG" />
+          <EntitySet Name="TAIKHOANs" EntityType="Self.TAIKHOAN" />
+          <EntitySet Name="PHIEUDANGKIs" EntityType="Self.PHIEUDANGKI" />
+        </EntityContainer>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -172,13 +173,13 @@ warning 6002: The table/view 'QuanLyHomestay.dbo.PHIEUDANGKI' does not have a pr
           <EntitySetMapping Name="HOADONs">
             <EntityTypeMapping TypeName="QuanLyHomestayModel.HOADON">
               <MappingFragment StoreEntitySet="HOADON">
-                <ScalarProperty Name="GiaTien" ColumnName="GiaTien" />
-                <ScalarProperty Name="NgayDi" ColumnName="NgayDi" />
-                <ScalarProperty Name="NgayDen" ColumnName="NgayDen" />
                 <ScalarProperty Name="MaHoaDon" ColumnName="MaHoaDon" />
                 <ScalarProperty Name="NgayThanhToan" ColumnName="NgayThanhToan" />
                 <ScalarProperty Name="SoTienDatTruoc" ColumnName="SoTienDatTruoc" />
                 <ScalarProperty Name="DonVi" ColumnName="DonVi" />
+                <ScalarProperty Name="NgayDen" ColumnName="NgayDen" />
+                <ScalarProperty Name="NgayDi" ColumnName="NgayDi" />
+                <ScalarProperty Name="GiaTien" ColumnName="GiaTien" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -204,17 +205,6 @@ warning 6002: The table/view 'QuanLyHomestay.dbo.PHIEUDANGKI' does not have a pr
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="PHIEUDANGKIs">
-            <EntityTypeMapping TypeName="QuanLyHomestayModel.PHIEUDANGKI">
-              <MappingFragment StoreEntitySet="PHIEUDANGKI">
-                <ScalarProperty Name="NgayDen" ColumnName="NgayDen" />
-                <ScalarProperty Name="MaLoaiPhong" ColumnName="MaLoaiPhong" />
-                <ScalarProperty Name="MaPhieuDangKi" ColumnName="MaPhieuDangKi" />
-                <ScalarProperty Name="MaKhachHang" ColumnName="MaKhachHang" />
-                <ScalarProperty Name="NgayDi" ColumnName="NgayDi" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
           <EntitySetMapping Name="PHONGs">
             <EntityTypeMapping TypeName="QuanLyHomestayModel.PHONG">
               <MappingFragment StoreEntitySet="PHONG">
@@ -230,11 +220,22 @@ warning 6002: The table/view 'QuanLyHomestay.dbo.PHIEUDANGKI' does not have a pr
           <EntitySetMapping Name="TAIKHOANs">
             <EntityTypeMapping TypeName="QuanLyHomestayModel.TAIKHOAN">
               <MappingFragment StoreEntitySet="TAIKHOAN">
-                <ScalarProperty Name="Matkhau" ColumnName="Matkhau" />
-                <ScalarProperty Name="TaiKhoan1" ColumnName="TaiKhoan" />
-                <ScalarProperty Name="Phone" ColumnName="Phone" />
-                <ScalarProperty Name="Email" ColumnName="Email" />
                 <ScalarProperty Name="HoTen" ColumnName="HoTen" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="TaiKhoan1" ColumnName="TaiKhoan" />
+                <ScalarProperty Name="Matkhau" ColumnName="Matkhau" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PHIEUDANGKIs">
+            <EntityTypeMapping TypeName="QuanLyHomestayModel.PHIEUDANGKI">
+              <MappingFragment StoreEntitySet="PHIEUDANGKI">
+                <ScalarProperty Name="MaPhieuDangKi" ColumnName="MaPhieuDangKi" />
+                <ScalarProperty Name="MaKhachHang" ColumnName="MaKhachHang" />
+                <ScalarProperty Name="MaLoaiPhong" ColumnName="MaLoaiPhong" />
+                <ScalarProperty Name="NgayDen" ColumnName="NgayDen" />
+                <ScalarProperty Name="NgayDi" ColumnName="NgayDi" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
