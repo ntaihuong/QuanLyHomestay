@@ -37,6 +37,11 @@ namespace HomestayApp
                 this.status = status;
             }
         }
+
+        public Confirm()
+        {
+        }
+
         private void unlock()
         {
             textBox1.Enabled = false;
