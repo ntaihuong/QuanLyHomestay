@@ -22,7 +22,13 @@ namespace HomestayApp
             init();
             comboBox2.SelectedValueChanged += comboBox2_SelectedValueChanged;
         }
-
+        private static Random random = new Random();
+        public static string RandomString(int length)
+        {
+            const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+            return new string(Enumerable.Repeat(chars, length)
+              .Select(s => s[random.Next(s.Length)]).ToArray());
+        }
         public void init()
         {
             lOAIPHONGBindingSource.DataSource = (from i in db.LOAIPHONGs select i).ToList();
@@ -64,16 +70,27 @@ namespace HomestayApp
             hd.DonVi = "VND";
             hd.MaHoaDon = "MHD"+DateTime.Now.Day+maso.ToString();       
             hd.NgayThanhToan = NgayDi;
+            hd.StringCode = RandomString(8);
             return hd;
         }
 
         private void btnDatPhong_Click(object sender, EventArgs e)
         {
             HOADON hd = Picked(comboBox2.SelectedValue.ToString(), dateTimePicker1.Value, dateTimePicker2.Value);
-            Confirm fm = new Confirm(hd,"adding");
+            Confirm fm = new Confirm(hd,"add");
             if(fm.ShowDialog() == DialogResult.OK)
             {
-                db.HOADONs.Add(hd);
+               
+            }
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            HOADON hd = (from i in db.HOADONs where i.StringCode == txtFind.Text select i).FirstOrDefault();
+            Confirm fm = new Confirm(hd, "edit");
+            if (fm.ShowDialog() == DialogResult.OK)
+            {
+                
             }
         }
     }

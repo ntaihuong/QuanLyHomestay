@@ -9,7 +9,7 @@
           <Key>
             <PropertyRef Name="MaHoaDon" />
           </Key>
-          <Property Name="MaHoaDon" Type="varchar" MaxLength="6" Nullable="false" />
+          <Property Name="MaHoaDon" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="NgayThanhToan" Type="smalldatetime" />
           <Property Name="SoTienDatTruoc" Type="int" />
           <Property Name="DonVi" Type="varchar" MaxLength="10" />
@@ -17,6 +17,7 @@
           <Property Name="NgayDi" Type="smalldatetime" />
           <Property Name="GiaTien" Type="nchar" MaxLength="50" />
           <Property Name="MaLoaiPhong" Type="nchar" MaxLength="10" />
+          <Property Name="StringCode" Type="nchar" MaxLength="255" />
         </EntityType>
         <EntityType Name="KHACHHANG">
           <Key>
@@ -74,7 +75,7 @@
           <Key>
             <PropertyRef Name="MaHoaDon" />
           </Key>
-          <Property Name="MaHoaDon" Type="String" MaxLength="6" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="MaHoaDon" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="NgayThanhToan" Type="DateTime" Precision="0" />
           <Property Name="SoTienDatTruoc" Type="Int32" />
           <Property Name="DonVi" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
@@ -82,6 +83,7 @@
           <Property Name="NgayDi" Type="DateTime" Precision="0" />
           <Property Name="GiaTien" Type="String" MaxLength="50" Unicode="true" FixedLength="true" />
           <Property Name="MaLoaiPhong" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="StringCode" Type="String" MaxLength="255" FixedLength="true" Unicode="true" />
         </EntityType>
         <EntityType Name="KHACHHANG">
           <Key>
@@ -140,6 +142,7 @@
           <EntitySetMapping Name="HOADONs">
             <EntityTypeMapping TypeName="QuanLyHomestayModel.HOADON">
               <MappingFragment StoreEntitySet="HOADON">
+                <ScalarProperty Name="StringCode" ColumnName="StringCode" />
                 <ScalarProperty Name="MaLoaiPhong" ColumnName="MaLoaiPhong" />
                 <ScalarProperty Name="MaHoaDon" ColumnName="MaHoaDon" />
                 <ScalarProperty Name="NgayThanhToan" ColumnName="NgayThanhToan" />
