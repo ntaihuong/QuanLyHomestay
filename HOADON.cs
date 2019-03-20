@@ -22,5 +22,6 @@ namespace HomestayApp
         public Nullable<System.DateTime> NgayDi { get; set; }
         public string GiaTien { get; set; }
         public string MaLoaiPhong { get; set; }
+        public string StringCode { get; set; }
     }
 }

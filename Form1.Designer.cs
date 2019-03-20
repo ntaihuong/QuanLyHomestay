@@ -40,11 +40,13 @@
             this.lbGo = new System.Windows.Forms.Label();
             this.lbCome = new System.Windows.Forms.Label();
             this.splitContainer3 = new System.Windows.Forms.SplitContainer();
-            this.label4 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.lOAIPHONGBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.btnDatPhong = new System.Windows.Forms.Button();
+            this.txtFind = new System.Windows.Forms.TextBox();
+            this.btnSearch = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -59,6 +61,7 @@
             this.splitContainer3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lOAIPHONGBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnSearch)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -104,6 +107,8 @@
             // 
             this.splitContainer2.Panel1.BackColor = System.Drawing.Color.White;
             this.splitContainer2.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.splitContainer2.Panel1.Controls.Add(this.btnSearch);
+            this.splitContainer2.Panel1.Controls.Add(this.txtFind);
             this.splitContainer2.Panel1.Controls.Add(this.btnDangNhap);
             this.splitContainer2.Panel1.Controls.Add(this.btnDK);
             this.splitContainer2.Panel1.Controls.Add(this.dateTimePicker2);
@@ -218,20 +223,6 @@
             this.splitContainer3.SplitterDistance = 268;
             this.splitContainer3.TabIndex = 0;
             // 
-            // label4
-            // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Blue;
-            this.label4.Location = new System.Drawing.Point(38, 10);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(120, 16);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "Chọn loại phòng";
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -245,6 +236,20 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
+            // 
+            // label4
+            // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Blue;
+            this.label4.Location = new System.Drawing.Point(17, 13);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(120, 16);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "Chọn loại phòng";
             // 
             // comboBox2
             // 
@@ -279,6 +284,22 @@
             this.btnDatPhong.UseVisualStyleBackColor = false;
             this.btnDatPhong.Click += new System.EventHandler(this.btnDatPhong_Click);
             // 
+            // txtFind
+            // 
+            this.txtFind.Location = new System.Drawing.Point(59, 209);
+            this.txtFind.Name = "txtFind";
+            this.txtFind.Size = new System.Drawing.Size(154, 20);
+            this.txtFind.TabIndex = 6;
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.Location = new System.Drawing.Point(12, 209);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(37, 20);
+            this.btnSearch.TabIndex = 7;
+            this.btnSearch.TabStop = false;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -306,6 +327,7 @@
             this.splitContainer3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lOAIPHONGBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnSearch)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -327,6 +349,8 @@
         private System.Windows.Forms.Button btnDangNhap;
         private System.Windows.Forms.Button btnDK;
         private System.Windows.Forms.BindingSource lOAIPHONGBindingSource;
+        private System.Windows.Forms.PictureBox btnSearch;
+        private System.Windows.Forms.TextBox txtFind;
     }
 }
 
