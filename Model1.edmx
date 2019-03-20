@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="QuanLyHomestayModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="QuanLyHomestayModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="HOADON">
           <Key>
             <PropertyRef Name="MaHoaDon" />
@@ -13,6 +13,9 @@
           <Property Name="NgayThanhToan" Type="smalldatetime" />
           <Property Name="SoTienDatTruoc" Type="int" />
           <Property Name="DonVi" Type="varchar" MaxLength="10" />
+          <Property Name="NgayDen" Type="smalldatetime" />
+          <Property Name="NgayDi" Type="smalldatetime" />
+          <Property Name="GiaTien" Type="nchar" MaxLength="50" />
         </EntityType>
         <EntityType Name="KHACHHANG">
           <Key>
@@ -31,16 +34,20 @@
             <PropertyRef Name="MaLoaiPhong" />
           </Key>
           <Property Name="MaLoaiPhong" Type="varchar" MaxLength="6" Nullable="false" />
-          <Property Name="TenLoaiPhong" Type="nvarchar" MaxLength="30" />
+          <Property Name="TenLoaiPhong" Type="nvarchar" MaxLength="100" />
           <Property Name="TrangBi" Type="nvarchar" MaxLength="100" />
         </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'QuanLyHomestay.dbo.PHIEUDANGKI' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="PHIEUDANGKI">
           <Key>
             <PropertyRef Name="MaPhieuDangKi" />
+            
           </Key>
           <Property Name="MaPhieuDangKi" Type="varchar" MaxLength="6" Nullable="false" />
-          <Property Name="MaKhachHang" Type="nvarchar" MaxLength="5" />
-          <Property Name="NgayLap" Type="smalldatetime" />
+          <Property Name="MaKhachHang" Type="nvarchar" MaxLength="5" Nullable="false" />
+          <Property Name="MaLoaiPhong" Type="varchar" MaxLength="6" />
+          <Property Name="NgayDen" Type="smalldatetime" />
           <Property Name="NgayDi" Type="smalldatetime" />
         </EntityType>
         <EntityType Name="PHONG">
@@ -54,15 +61,33 @@
           <Property Name="GiaPhong" Type="int" />
           <Property Name="DonVi" Type="varchar" MaxLength="10" />
         </EntityType>
+        <EntityType Name="TAIKHOAN">
+          <Key>
+            <PropertyRef Name="TaiKhoan" />
+          </Key>
+          <Property Name="HoTen" Type="nvarchar" MaxLength="50" />
+          <Property Name="Email" Type="varchar" MaxLength="50" />
+          <Property Name="Phone" Type="int" />
+          <Property Name="TaiKhoan" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Matkhau" Type="varchar" MaxLength="10" />
+        </EntityType>
         <EntityContainer Name="QuanLyHomestayModelStoreContainer">
           <EntitySet Name="HOADON" EntityType="Self.HOADON" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="KHACHHANG" EntityType="Self.KHACHHANG" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="LOAIPHONG" EntityType="Self.LOAIPHONG" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="PHIEUDANGKI" EntityType="Self.PHIEUDANGKI" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="PHONG" EntityType="Self.PHONG" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TAIKHOAN" EntityType="Self.TAIKHOAN" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PHIEUDANGKI" EntityType="Self.PHIEUDANGKI" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [PHIEUDANGKI].[MaPhieuDangKi] AS [MaPhieuDangKi], 
+    [PHIEUDANGKI].[MaKhachHang] AS [MaKhachHang], 
+    [PHIEUDANGKI].[MaLoaiPhong] AS [MaLoaiPhong], 
+    [PHIEUDANGKI].[NgayDen] AS [NgayDen], 
+    [PHIEUDANGKI].[NgayDi] AS [NgayDi]
+    FROM [dbo].[PHIEUDANGKI] AS [PHIEUDANGKI]</DefiningQuery>
+          </EntitySet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="QuanLyHomestayModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -74,6 +99,9 @@
           <Property Name="NgayThanhToan" Type="DateTime" Precision="0" />
           <Property Name="SoTienDatTruoc" Type="Int32" />
           <Property Name="DonVi" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="NgayDen" Type="DateTime" Precision="0" />
+          <Property Name="NgayDi" Type="DateTime" Precision="0" />
+          <Property Name="GiaTien" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
         </EntityType>
         <EntityType Name="KHACHHANG">
           <Key>
@@ -92,7 +120,7 @@
             <PropertyRef Name="MaLoaiPhong" />
           </Key>
           <Property Name="MaLoaiPhong" Type="String" MaxLength="6" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="TenLoaiPhong" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="TenLoaiPhong" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
           <Property Name="TrangBi" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
         </EntityType>
         <EntityType Name="PHIEUDANGKI">
@@ -100,9 +128,11 @@
             <PropertyRef Name="MaPhieuDangKi" />
           </Key>
           <Property Name="MaPhieuDangKi" Type="String" MaxLength="6" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="MaKhachHang" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+          <Property Name="MaKhachHang" Type="String" MaxLength="5" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="NgayLap" Type="DateTime" Precision="0" />
           <Property Name="NgayDi" Type="DateTime" Precision="0" />
+          <Property Name="MaLoaiPhong" Type="String" MaxLength="6" FixedLength="false" Unicode="false" />
+          <Property Name="NgayDen" Type="DateTime" Precision="0" />
         </EntityType>
         <EntityType Name="PHONG">
           <Key>
@@ -121,7 +151,18 @@
           <EntitySet Name="LOAIPHONGs" EntityType="Self.LOAIPHONG" />
           <EntitySet Name="PHIEUDANGKIs" EntityType="Self.PHIEUDANGKI" />
           <EntitySet Name="PHONGs" EntityType="Self.PHONG" />
+          <EntitySet Name="TAIKHOANs" EntityType="QuanLyHomestayModel.TAIKHOAN" />
         </EntityContainer>
+        <EntityType Name="TAIKHOAN">
+          <Key>
+            <PropertyRef Name="TaiKhoan1" />
+          </Key>
+          <Property Name="HoTen" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Phone" Type="Int32" />
+          <Property Name="TaiKhoan1" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Matkhau" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -131,6 +172,9 @@
           <EntitySetMapping Name="HOADONs">
             <EntityTypeMapping TypeName="QuanLyHomestayModel.HOADON">
               <MappingFragment StoreEntitySet="HOADON">
+                <ScalarProperty Name="GiaTien" ColumnName="GiaTien" />
+                <ScalarProperty Name="NgayDi" ColumnName="NgayDi" />
+                <ScalarProperty Name="NgayDen" ColumnName="NgayDen" />
                 <ScalarProperty Name="MaHoaDon" ColumnName="MaHoaDon" />
                 <ScalarProperty Name="NgayThanhToan" ColumnName="NgayThanhToan" />
                 <ScalarProperty Name="SoTienDatTruoc" ColumnName="SoTienDatTruoc" />
@@ -163,9 +207,10 @@
           <EntitySetMapping Name="PHIEUDANGKIs">
             <EntityTypeMapping TypeName="QuanLyHomestayModel.PHIEUDANGKI">
               <MappingFragment StoreEntitySet="PHIEUDANGKI">
+                <ScalarProperty Name="NgayDen" ColumnName="NgayDen" />
+                <ScalarProperty Name="MaLoaiPhong" ColumnName="MaLoaiPhong" />
                 <ScalarProperty Name="MaPhieuDangKi" ColumnName="MaPhieuDangKi" />
                 <ScalarProperty Name="MaKhachHang" ColumnName="MaKhachHang" />
-                <ScalarProperty Name="NgayLap" ColumnName="NgayLap" />
                 <ScalarProperty Name="NgayDi" ColumnName="NgayDi" />
               </MappingFragment>
             </EntityTypeMapping>
@@ -179,6 +224,17 @@
                 <ScalarProperty Name="MaLoaiPhong" ColumnName="MaLoaiPhong" />
                 <ScalarProperty Name="GiaPhong" ColumnName="GiaPhong" />
                 <ScalarProperty Name="DonVi" ColumnName="DonVi" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TAIKHOANs">
+            <EntityTypeMapping TypeName="QuanLyHomestayModel.TAIKHOAN">
+              <MappingFragment StoreEntitySet="TAIKHOAN">
+                <ScalarProperty Name="Matkhau" ColumnName="Matkhau" />
+                <ScalarProperty Name="TaiKhoan1" ColumnName="TaiKhoan" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="HoTen" ColumnName="HoTen" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

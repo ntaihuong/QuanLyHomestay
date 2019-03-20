@@ -12,14 +12,12 @@ namespace HomestayApp
     using System;
     using System.Collections.Generic;
     
-    public partial class HOADON
+    public partial class TAIKHOAN
     {
-        public string MaHoaDon { get; set; }
-        public Nullable<System.DateTime> NgayThanhToan { get; set; }
-        public Nullable<int> SoTienDatTruoc { get; set; }
-        public string DonVi { get; set; }
-        public Nullable<System.DateTime> NgayDen { get; set; }
-        public Nullable<System.DateTime> NgayDi { get; set; }
-        public string GiaTien { get; set; }
+        public string HoTen { get; set; }
+        public string Email { get; set; }
+        public Nullable<int> Phone { get; set; }
+        public string TaiKhoan1 { get; set; }
+        public string Matkhau { get; set; }
     }
 }

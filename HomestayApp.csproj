@@ -54,6 +54,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Confirm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Confirm.Designer.cs">
+      <DependentUpon>Confirm.cs</DependentUpon>
+    </Compile>
     <Compile Include="fmDangKi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,6 +120,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QuanLyHomestayDataSet.xsd</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Confirm.resx">
+      <DependentUpon>Confirm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fmDangKi.resx">
       <DependentUpon>fmDangKi.cs</DependentUpon>
     </EmbeddedResource>
