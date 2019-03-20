@@ -151,7 +151,7 @@
             this.lbTaikhoan.Size = new System.Drawing.Size(62, 16);
             this.lbTaikhoan.TabIndex = 0;
             this.lbTaikhoan.Text = "Tài khoản";
-            
+            this.lbTaikhoan.Click += new System.EventHandler(this.lbTaikhoan_Click);
             // 
             // panel5
             // 
