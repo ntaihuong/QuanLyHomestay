@@ -53,7 +53,6 @@
             this.label1.Size = new System.Drawing.Size(89, 13);
             this.label1.TabIndex = 1;
             this.label1.Text = "Tên Loại Phòng: ";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -109,6 +108,7 @@
             this.btnXacNhan.TabIndex = 7;
             this.btnXacNhan.Text = "Xác Nhận";
             this.btnXacNhan.UseVisualStyleBackColor = true;
+            this.btnXacNhan.Click += new System.EventHandler(this.btnXacNhan_Click);
             // 
             // textBox1
             // 
@@ -160,6 +160,7 @@
             // 
             // Confirm
             // 
+            this.AcceptButton = this.btnXacNhan;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(429, 361);
@@ -177,7 +178,6 @@
             this.Controls.Add(this.label1);
             this.Name = "Confirm";
             this.Text = "Xác Nhận Đặt Phòng";
-            this.Load += new System.EventHandler(this.Confirm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

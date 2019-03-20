@@ -30,6 +30,5 @@ namespace HomestayApp
         public virtual DbSet<LOAIPHONG> LOAIPHONGs { get; set; }
         public virtual DbSet<PHONG> PHONGs { get; set; }
         public virtual DbSet<TAIKHOAN> TAIKHOANs { get; set; }
-        public virtual DbSet<PHIEUDANGKI> PHIEUDANGKIs { get; set; }
     }
 }

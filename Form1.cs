@@ -53,6 +53,7 @@ namespace HomestayApp
         }
         private HOADON Picked(string MaLoaiPhong,DateTime NgayDen,DateTime NgayDi)
         {
+            int maso = (from i in db.HOADONs select i).Count();
             HOADON hd = new HOADON();
             hd.NgayDen = NgayDen;
             hd.NgayDi = NgayDi;
@@ -61,15 +62,19 @@ namespace HomestayApp
             hd.GiaTien = p.GiaPhong.ToString();
             hd.MaLoaiPhong = MaLoaiPhong;
             hd.DonVi = "VND";
-            hd.MaHoaDon = NgayDen.ToString() + NgayDi.ToString();
+            hd.MaHoaDon = "MHD"+maso.ToString();       
             hd.NgayThanhToan = NgayDi;
             return hd;
         }
 
         private void btnDatPhong_Click(object sender, EventArgs e)
         {
-            Confirm fm = new Confirm(Picked(comboBox2.SelectedValue.ToString(), dateTimePicker1.Value, dateTimePicker2.Value));
-            fm.ShowDialog();
+            HOADON hd = Picked(comboBox2.SelectedValue.ToString(), dateTimePicker1.Value, dateTimePicker2.Value);
+            Confirm fm = new Confirm(hd,"adding");
+            if(fm.ShowDialog() == DialogResult.OK)
+            {
+                db.HOADONs.Add(hd);
+            }
         }
     }
 }
