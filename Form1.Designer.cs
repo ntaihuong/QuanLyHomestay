@@ -108,7 +108,7 @@
             // 
             // splitContainer2.Panel1
             // 
-            this.splitContainer2.Panel1.BackColor = System.Drawing.Color.White;
+            this.splitContainer2.Panel1.BackColor = System.Drawing.Color.GhostWhite;
             this.splitContainer2.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.splitContainer2.Panel1.Controls.Add(this.btnDanhGia);
             this.splitContainer2.Panel1.Controls.Add(this.btnDangXuat);
@@ -132,34 +132,34 @@
             // btnDanhGia
             // 
             this.btnDanhGia.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnDanhGia.BackColor = System.Drawing.Color.Aqua;
-            this.btnDanhGia.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDanhGia.Location = new System.Drawing.Point(12, 231);
+            this.btnDanhGia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnDanhGia.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDanhGia.Location = new System.Drawing.Point(21, 233);
             this.btnDanhGia.Name = "btnDanhGia";
             this.btnDanhGia.Size = new System.Drawing.Size(88, 40);
             this.btnDanhGia.TabIndex = 9;
             this.btnDanhGia.Text = "Đánh giá";
-            this.btnDanhGia.UseVisualStyleBackColor = true;
+            this.btnDanhGia.UseVisualStyleBackColor = false;
             this.btnDanhGia.Click += new System.EventHandler(this.btnDanhGia_Click);
             // 
             // btnDangXuat
             // 
             this.btnDangXuat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnDangXuat.BackColor = System.Drawing.Color.Aqua;
-            this.btnDangXuat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDangXuat.Location = new System.Drawing.Point(106, 231);
+            this.btnDangXuat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnDangXuat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDangXuat.Location = new System.Drawing.Point(130, 279);
             this.btnDangXuat.Name = "btnDangXuat";
             this.btnDangXuat.Size = new System.Drawing.Size(88, 40);
             this.btnDangXuat.TabIndex = 8;
-            this.btnDangXuat.Text = "Đăng Xuất";
-            this.btnDangXuat.UseVisualStyleBackColor = true;
+            this.btnDangXuat.Text = "Đăng xuất";
+            this.btnDangXuat.UseVisualStyleBackColor = false;
             this.btnDangXuat.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnSearch
             // 
             this.btnSearch.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSearch.BackgroundImage")));
             this.btnSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnSearch.Location = new System.Drawing.Point(194, 32);
+            this.btnSearch.Location = new System.Drawing.Point(194, 23);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(41, 30);
             this.btnSearch.TabIndex = 7;
@@ -169,22 +169,22 @@
             // btnDangNhap
             // 
             this.btnDangNhap.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnDangNhap.BackColor = System.Drawing.Color.Aqua;
-            this.btnDangNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDangNhap.Location = new System.Drawing.Point(106, 277);
+            this.btnDangNhap.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnDangNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDangNhap.Location = new System.Drawing.Point(21, 279);
             this.btnDangNhap.Name = "btnDangNhap";
             this.btnDangNhap.Size = new System.Drawing.Size(88, 40);
             this.btnDangNhap.TabIndex = 5;
             this.btnDangNhap.Text = "Đăng nhập";
-            this.btnDangNhap.UseVisualStyleBackColor = true;
+            this.btnDangNhap.UseVisualStyleBackColor = false;
             this.btnDangNhap.Click += new System.EventHandler(this.btnDangNhap_Click);
             // 
             // btnDK
             // 
             this.btnDK.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnDK.BackColor = System.Drawing.Color.Aqua;
-            this.btnDK.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDK.Location = new System.Drawing.Point(12, 276);
+            this.btnDK.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnDK.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDK.Location = new System.Drawing.Point(130, 233);
             this.btnDK.Name = "btnDK";
             this.btnDK.Size = new System.Drawing.Size(88, 41);
             this.btnDK.TabIndex = 4;
@@ -195,7 +195,7 @@
             // txtFind
             // 
             this.txtFind.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txtFind.Location = new System.Drawing.Point(21, 36);
+            this.txtFind.Location = new System.Drawing.Point(21, 27);
             this.txtFind.Name = "txtFind";
             this.txtFind.Size = new System.Drawing.Size(167, 26);
             this.txtFind.TabIndex = 6;
@@ -205,7 +205,7 @@
             this.dateTimePicker2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dateTimePicker2.Location = new System.Drawing.Point(17, 199);
+            this.dateTimePicker2.Location = new System.Drawing.Point(17, 178);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(201, 20);
             this.dateTimePicker2.TabIndex = 3;
@@ -215,7 +215,7 @@
             this.dateTimePicker1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(17, 120);
+            this.dateTimePicker1.Location = new System.Drawing.Point(17, 108);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(201, 20);
             this.dateTimePicker1.TabIndex = 2;
@@ -226,12 +226,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lbGo.AutoSize = true;
-            this.lbGo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.lbGo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lbGo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.lbGo.Location = new System.Drawing.Point(17, 155);
+            this.lbGo.BackColor = System.Drawing.Color.GhostWhite;
+            this.lbGo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lbGo.ForeColor = System.Drawing.Color.Blue;
+            this.lbGo.Location = new System.Drawing.Point(17, 146);
             this.lbGo.Name = "lbGo";
-            this.lbGo.Size = new System.Drawing.Size(82, 24);
+            this.lbGo.Size = new System.Drawing.Size(68, 20);
             this.lbGo.TabIndex = 1;
             this.lbGo.Text = "Ngày đi";
             // 
@@ -241,12 +241,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lbCome.AutoSize = true;
-            this.lbCome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.lbCome.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lbCome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.lbCome.Location = new System.Drawing.Point(17, 80);
+            this.lbCome.BackColor = System.Drawing.Color.GhostWhite;
+            this.lbCome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lbCome.ForeColor = System.Drawing.Color.Blue;
+            this.lbCome.Location = new System.Drawing.Point(17, 76);
             this.lbCome.Name = "lbCome";
-            this.lbCome.Size = new System.Drawing.Size(101, 24);
+            this.lbCome.Size = new System.Drawing.Size(84, 20);
             this.lbCome.TabIndex = 0;
             this.lbCome.Text = "Ngày đến";
             this.lbCome.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -260,14 +260,14 @@
             // 
             // splitContainer3.Panel1
             // 
-            this.splitContainer3.Panel1.BackColor = System.Drawing.Color.White;
+            this.splitContainer3.Panel1.BackColor = System.Drawing.Color.GhostWhite;
             this.splitContainer3.Panel1.Controls.Add(this.pictureBox1);
             this.splitContainer3.Panel1.Controls.Add(this.label4);
             this.splitContainer3.Panel1.Controls.Add(this.comboBox2);
             // 
             // splitContainer3.Panel2
             // 
-            this.splitContainer3.Panel2.BackColor = System.Drawing.Color.White;
+            this.splitContainer3.Panel2.BackColor = System.Drawing.Color.GhostWhite;
             this.splitContainer3.Panel2.Controls.Add(this.txtthongtin);
             this.splitContainer3.Panel2.Controls.Add(this.btnDatPhong);
             this.splitContainer3.Size = new System.Drawing.Size(502, 331);
@@ -322,18 +322,18 @@
             this.txtthongtin.Location = new System.Drawing.Point(50, 5);
             this.txtthongtin.Multiline = true;
             this.txtthongtin.Name = "txtthongtin";
-            this.txtthongtin.Size = new System.Drawing.Size(318, 45);
+            this.txtthongtin.Size = new System.Drawing.Size(314, 45);
             this.txtthongtin.TabIndex = 4;
             // 
             // btnDatPhong
             // 
             this.btnDatPhong.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnDatPhong.BackColor = System.Drawing.Color.MistyRose;
+            this.btnDatPhong.BackColor = System.Drawing.Color.White;
             this.btnDatPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDatPhong.ForeColor = System.Drawing.Color.Blue;
-            this.btnDatPhong.Location = new System.Drawing.Point(374, 5);
+            this.btnDatPhong.Location = new System.Drawing.Point(370, 5);
             this.btnDatPhong.Name = "btnDatPhong";
-            this.btnDatPhong.Size = new System.Drawing.Size(82, 45);
+            this.btnDatPhong.Size = new System.Drawing.Size(86, 45);
             this.btnDatPhong.TabIndex = 3;
             this.btnDatPhong.Text = "Đặt phòng";
             this.btnDatPhong.UseVisualStyleBackColor = false;
