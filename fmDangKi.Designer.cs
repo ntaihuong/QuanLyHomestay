@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel6 = new System.Windows.Forms.Panel();
             this.txtXNMK = new System.Windows.Forms.TextBox();
             this.lbXNMK = new System.Windows.Forms.Label();
@@ -48,12 +49,14 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.txtHoten = new System.Windows.Forms.TextBox();
             this.lbHoten = new System.Windows.Forms.Label();
+            this.tAIKHOANBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panel6.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tAIKHOANBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // panel6
@@ -101,6 +104,7 @@
             // 
             // txtMatKhau
             // 
+            this.txtMatKhau.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tAIKHOANBindingSource, "Matkhau", true));
             this.txtMatKhau.Location = new System.Drawing.Point(147, 11);
             this.txtMatKhau.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txtMatKhau.Name = "txtMatKhau";
@@ -133,6 +137,7 @@
             // 
             // txtTaikhoan
             // 
+            this.txtTaikhoan.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tAIKHOANBindingSource, "TaiKhoan1", true));
             this.txtTaikhoan.Location = new System.Drawing.Point(147, 11);
             this.txtTaikhoan.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txtTaikhoan.Name = "txtTaikhoan";
@@ -166,6 +171,7 @@
             // 
             // txtPhone
             // 
+            this.txtPhone.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tAIKHOANBindingSource, "Phone", true));
             this.txtPhone.Location = new System.Drawing.Point(147, 11);
             this.txtPhone.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txtPhone.Name = "txtPhone";
@@ -209,6 +215,7 @@
             this.btnDangKi.TabIndex = 10;
             this.btnDangKi.Text = "Đăng Ký";
             this.btnDangKi.UseVisualStyleBackColor = false;
+            this.btnDangKi.Click += new System.EventHandler(this.btnDangKi_Click);
             // 
             // panel3
             // 
@@ -223,6 +230,7 @@
             // 
             // txtEmail
             // 
+            this.txtEmail.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tAIKHOANBindingSource, "Email", true));
             this.txtEmail.Location = new System.Drawing.Point(147, 14);
             this.txtEmail.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txtEmail.Name = "txtEmail";
@@ -255,6 +263,7 @@
             // 
             // txtHoten
             // 
+            this.txtHoten.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tAIKHOANBindingSource, "HoTen", true));
             this.txtHoten.Location = new System.Drawing.Point(147, 14);
             this.txtHoten.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txtHoten.Name = "txtHoten";
@@ -273,6 +282,10 @@
             this.lbHoten.Size = new System.Drawing.Size(45, 16);
             this.lbHoten.TabIndex = 0;
             this.lbHoten.Text = "Họ tên";
+            // 
+            // tAIKHOANBindingSource
+            // 
+            this.tAIKHOANBindingSource.DataSource = typeof(HomestayApp.TAIKHOAN);
             // 
             // fmDangKi
             // 
@@ -294,6 +307,7 @@
             this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.Name = "fmDangKi";
             this.Text = "fmDangKi";
+            this.Load += new System.EventHandler(this.fmDangKi_Load);
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             this.panel7.ResumeLayout(false);
@@ -306,6 +320,7 @@
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tAIKHOANBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -332,5 +347,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.TextBox txtHoten;
         private System.Windows.Forms.Label lbHoten;
+        private System.Windows.Forms.BindingSource tAIKHOANBindingSource;
     }
 }

@@ -68,9 +68,9 @@ namespace HomestayApp
             hd.GiaTien = p.GiaPhong.ToString();
             hd.MaLoaiPhong = MaLoaiPhong;
             hd.DonVi = "VND";
-            hd.MaHoaDon = "MHD" + DateTime.Now.Day;
+            hd.MaHoaDon = RandomString(5) + MaLoaiPhong;
             hd.NgayThanhToan = NgayDi;
-            hd.StringCode = RandomString(8);
+            //hd.StringCode = RandomString(8);
             return hd;
         }
 
@@ -86,7 +86,7 @@ namespace HomestayApp
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            HOADON hd = (from i in db.HOADONs where i.StringCode == txtFind.Text select i).FirstOrDefault();
+            HOADON hd = (from i in db.HOADONs where i.MaHoaDon == txtFind.Text select i).FirstOrDefault();
             Confirm fm = new Confirm(hd, "edit");
             if (fm.ShowDialog() == DialogResult.OK)
             {

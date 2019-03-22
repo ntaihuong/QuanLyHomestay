@@ -112,6 +112,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Register.cs" />
     <Compile Include="TAIKHOAN.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -142,6 +143,7 @@
     <None Include="Properties\DataSources\HOADON.datasource" />
     <None Include="Properties\DataSources\LOAIPHONG.datasource" />
     <None Include="Properties\DataSources\PHIEUDANGKI.datasource" />
+    <None Include="Properties\DataSources\TAIKHOAN.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -156,38 +158,16 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\hn300.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\4159b63f6f2b90a.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\164930.74MTP5b9758efa1bfe.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\tải xuống.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\tải xuống %281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\tải xuống %281%291.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\dk.jpg" />
     <None Include="Resources\login.jpg" />
-    <None Include="Resources\images.jpg" />
-    <None Include="Resources\tải xuống.jpg" />
-    <None Include="Resources\glowing-light-blue-abstract-programming-code-background-on-dark-software-or-script-development-concept_rgg0rnttyl_thumbnail-full01.png" />
-    <None Include="Resources\pattern-background-background-pattern-blue-thumb.jpg" />
-    <None Include="Resources\tuyet-roi-bacsiwindows-com.jpg" />
-    <None Include="Resources\nhung-hinh-nen-powerpoint-mau-xanh-duong-dep_012325293.jpg" />
     <None Include="Resources\VP3.jpg" />
     <None Include="Resources\TC1.jpg" />
     <None Include="Resources\PTT.jpg" />
     <None Include="Resources\NC2.jpg" />
     <None Include="Resources\NC1.jpg" />
-    <None Include="Resources\đánh giá.png" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

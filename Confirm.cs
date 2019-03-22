@@ -67,5 +67,20 @@ namespace HomestayApp
             this.Close();
         }
 
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            PHONG p = (from i in db.PHONGs where i.MaLoaiPhong == comboBox1.SelectedValue.ToString() select i).FirstOrDefault();
+            if(p!=null)
+            textBox4.Text = p.GiaPhong.ToString();
+            else
+            {
+                return;
+            }
+        }
+
+        private void comboBox1_SelectedValueChanged(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

@@ -183,6 +183,8 @@
             this.comboBox1.TabIndex = 14;
             this.comboBox1.ValueMember = "MaLoaiPhong";
             this.comboBox1.Visible = false;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.comboBox1.SelectedValueChanged += new System.EventHandler(this.comboBox1_SelectedValueChanged);
             // 
             // lOAIPHONGBindingSource
             // 
