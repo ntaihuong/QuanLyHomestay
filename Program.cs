@@ -18,7 +18,7 @@ namespace HomestayApp
             Application.SetCompatibleTextRenderingDefault(false);
 
 
-            Application.Run(new Confirm());
+            Application.Run(new Form1());
 
             
 

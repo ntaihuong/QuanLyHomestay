@@ -9,7 +9,7 @@ namespace HomestayApp
     
     class Register
     {
-        private QuanLyHomestayEntities db;
+        private QuanLyHomestayEntities db = new QuanLyHomestayEntities();
         TAIKHOAN tk;
         public bool checkMK(string a,string b)
         {
