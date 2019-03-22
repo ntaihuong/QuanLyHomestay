@@ -70,6 +70,7 @@ namespace HomestayApp
             }
             db.SaveChanges();
             this.Close();
+            MessageBox.Show("Mã Hóa Đơn: " + hd.MaHoaDon, "thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
