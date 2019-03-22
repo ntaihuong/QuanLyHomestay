@@ -128,12 +128,15 @@
             // 
             this.btnSearch.BackgroundImage = global::HomestayApp.Properties.Resources.search;
             this.btnSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnSearch.Location = new System.Drawing.Point(194, 32);
+            this.btnSearch.Location = new System.Drawing.Point(198, 24);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(41, 30);
             this.btnSearch.TabIndex = 7;
             this.btnSearch.TabStop = false;
+<<<<<<< HEAD
+=======
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+>>>>>>> 58f7b8931bef30f084556a5ac942d611e57bebdc
             // 
             // btnDangNhap
             // 
@@ -163,10 +166,17 @@
             // 
             // txtFind
             // 
+<<<<<<< HEAD
+            this.txtFind.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtFind.Location = new System.Drawing.Point(25, 32);
+            this.txtFind.Name = "txtFind";
+            this.txtFind.Size = new System.Drawing.Size(167, 22);
+=======
             this.txtFind.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.txtFind.Location = new System.Drawing.Point(21, 36);
             this.txtFind.Name = "txtFind";
             this.txtFind.Size = new System.Drawing.Size(167, 26);
+>>>>>>> 58f7b8931bef30f084556a5ac942d611e57bebdc
             this.txtFind.TabIndex = 6;
             // 
             // dateTimePicker2
@@ -174,7 +184,7 @@
             this.dateTimePicker2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dateTimePicker2.Location = new System.Drawing.Point(21, 207);
+            this.dateTimePicker2.Location = new System.Drawing.Point(17, 199);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(201, 20);
             this.dateTimePicker2.TabIndex = 3;
@@ -184,7 +194,7 @@
             this.dateTimePicker1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(21, 128);
+            this.dateTimePicker1.Location = new System.Drawing.Point(17, 120);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(201, 20);
             this.dateTimePicker1.TabIndex = 2;
@@ -198,7 +208,7 @@
             this.lbGo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.lbGo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lbGo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.lbGo.Location = new System.Drawing.Point(21, 163);
+            this.lbGo.Location = new System.Drawing.Point(17, 155);
             this.lbGo.Name = "lbGo";
             this.lbGo.Size = new System.Drawing.Size(82, 24);
             this.lbGo.TabIndex = 1;
@@ -213,7 +223,7 @@
             this.lbCome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.lbCome.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lbCome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.lbCome.Location = new System.Drawing.Point(21, 88);
+            this.lbCome.Location = new System.Drawing.Point(17, 80);
             this.lbCome.Name = "lbCome";
             this.lbCome.Size = new System.Drawing.Size(101, 24);
             this.lbCome.TabIndex = 0;
@@ -300,7 +310,10 @@
             this.btnDatPhong.TabIndex = 3;
             this.btnDatPhong.Text = "Đặt phòng";
             this.btnDatPhong.UseVisualStyleBackColor = false;
+<<<<<<< HEAD
+=======
             this.btnDatPhong.Click += new System.EventHandler(this.btnDatPhong_Click);
+>>>>>>> 58f7b8931bef30f084556a5ac942d611e57bebdc
             // 
             // Form1
             // 
