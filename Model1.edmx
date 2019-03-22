@@ -5,6 +5,15 @@
     <!-- SSDL content -->
     <edmx:StorageModels>
     <Schema Namespace="QuanLyHomestayModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="DanhGia">
+          <Key>
+            <PropertyRef Name="STT" />
+            <PropertyRef Name="MaLoaiPhong" />
+          </Key>
+          <Property Name="STT" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="MaLoaiPhong" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="DanhGia" Type="varchar" MaxLength="255" />
+        </EntityType>
         <EntityType Name="HOADON">
           <Key>
             <PropertyRef Name="MaHoaDon" />
@@ -61,6 +70,7 @@
           <Property Name="Matkhau" Type="varchar" MaxLength="10" />
         </EntityType>
         <EntityContainer Name="QuanLyHomestayModelStoreContainer">
+          <EntitySet Name="DanhGia" EntityType="Self.DanhGia" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="HOADON" EntityType="Self.HOADON" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="KHACHHANG" EntityType="Self.KHACHHANG" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="LOAIPHONG" EntityType="Self.LOAIPHONG" Schema="dbo" store:Type="Tables" />
@@ -122,7 +132,7 @@
           </Key>
           <Property Name="HoTen" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-          <Property Name="Phone" Type="String" ConcurrencyMode="None" />
+          <Property Name="Phone" Type="String" ConcurrencyMode="None" MaxLength="50" Unicode="false" FixedLength="false" />
           <Property Name="TaiKhoan1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="Matkhau" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
         </EntityType>
@@ -132,7 +142,17 @@
           <EntitySet Name="LOAIPHONGs" EntityType="Self.LOAIPHONG" />
           <EntitySet Name="PHONGs" EntityType="Self.PHONG" />
           <EntitySet Name="TAIKHOANs" EntityType="Self.TAIKHOAN" />
+          <EntitySet Name="DanhGias" EntityType="QuanLyHomestayModel.DanhGia" />
         </EntityContainer>
+        <EntityType Name="DanhGia">
+          <Key>
+            <PropertyRef Name="STT" />
+            <PropertyRef Name="MaLoaiPhong" />
+          </Key>
+          <Property Name="DanhGia1" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="STT" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="MaLoaiPhong" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -196,6 +216,15 @@
                 <ScalarProperty Name="Phone" ColumnName="Phone" />
                 <ScalarProperty Name="TaiKhoan1" ColumnName="TaiKhoan" />
                 <ScalarProperty Name="Matkhau" ColumnName="Matkhau" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DanhGias">
+            <EntityTypeMapping TypeName="QuanLyHomestayModel.DanhGia">
+              <MappingFragment StoreEntitySet="DanhGia">
+                <ScalarProperty Name="MaLoaiPhong" ColumnName="MaLoaiPhong" />
+                <ScalarProperty Name="STT" ColumnName="STT" />
+                <ScalarProperty Name="DanhGia1" ColumnName="DanhGia" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

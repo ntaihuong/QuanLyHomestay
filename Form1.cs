@@ -22,6 +22,7 @@ namespace HomestayApp
         {
             InitializeComponent();
             init();
+            btnDatPhong.Enabled = false;
             comboBox2.SelectedValueChanged += comboBox2_SelectedValueChanged;
         }
         private static Random random = new Random();
@@ -65,7 +66,15 @@ namespace HomestayApp
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
             fmLogin frm = new fmLogin();
-            frm.ShowDialog();
+            if( frm.ShowDialog()==DialogResult.OK)
+            {
+
+                btnDatPhong.Enabled = true;
+            }
+            else
+            {
+                return;
+            }
         }
 
         private void btnDK_Click(object sender, EventArgs e)
@@ -113,6 +122,17 @@ namespace HomestayApp
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            btnDatPhong.Enabled = false;
+        }
+
+        private void btnDanhGia_Click(object sender, EventArgs e)
+        {
+            fmDanhGia fm = new fmDanhGia();
+            fm.ShowDialog();
         }
     }
 }

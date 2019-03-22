@@ -33,6 +33,8 @@
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.label1 = new System.Windows.Forms.Label();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
+            this.btnDanhGia = new System.Windows.Forms.Button();
+            this.btnDangXuat = new System.Windows.Forms.Button();
             this.btnSearch = new System.Windows.Forms.PictureBox();
             this.btnDangNhap = new System.Windows.Forms.Button();
             this.btnDK = new System.Windows.Forms.Button();
@@ -46,8 +48,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.lOAIPHONGBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.btnDatPhong = new System.Windows.Forms.Button();
             this.txtthongtin = new System.Windows.Forms.TextBox();
+            this.btnDatPhong = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -108,6 +110,8 @@
             // 
             this.splitContainer2.Panel1.BackColor = System.Drawing.Color.White;
             this.splitContainer2.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.splitContainer2.Panel1.Controls.Add(this.btnDanhGia);
+            this.splitContainer2.Panel1.Controls.Add(this.btnDangXuat);
             this.splitContainer2.Panel1.Controls.Add(this.btnSearch);
             this.splitContainer2.Panel1.Controls.Add(this.btnDangNhap);
             this.splitContainer2.Panel1.Controls.Add(this.btnDK);
@@ -125,9 +129,35 @@
             this.splitContainer2.SplitterDistance = 251;
             this.splitContainer2.TabIndex = 0;
             // 
+            // btnDanhGia
+            // 
+            this.btnDanhGia.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnDanhGia.BackColor = System.Drawing.Color.Aqua;
+            this.btnDanhGia.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDanhGia.Location = new System.Drawing.Point(12, 231);
+            this.btnDanhGia.Name = "btnDanhGia";
+            this.btnDanhGia.Size = new System.Drawing.Size(88, 40);
+            this.btnDanhGia.TabIndex = 9;
+            this.btnDanhGia.Text = "Đánh giá";
+            this.btnDanhGia.UseVisualStyleBackColor = true;
+            this.btnDanhGia.Click += new System.EventHandler(this.btnDanhGia_Click);
+            // 
+            // btnDangXuat
+            // 
+            this.btnDangXuat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnDangXuat.BackColor = System.Drawing.Color.Aqua;
+            this.btnDangXuat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDangXuat.Location = new System.Drawing.Point(106, 231);
+            this.btnDangXuat.Name = "btnDangXuat";
+            this.btnDangXuat.Size = new System.Drawing.Size(88, 40);
+            this.btnDangXuat.TabIndex = 8;
+            this.btnDangXuat.Text = "Đăng Xuất";
+            this.btnDangXuat.UseVisualStyleBackColor = true;
+            this.btnDangXuat.Click += new System.EventHandler(this.button1_Click);
+            // 
             // btnSearch
             // 
-            this.btnSearch.BackgroundImage = global::HomestayApp.Properties.Resources.search;
+            this.btnSearch.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSearch.BackgroundImage")));
             this.btnSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnSearch.Location = new System.Drawing.Point(194, 32);
             this.btnSearch.Name = "btnSearch";
@@ -141,7 +171,7 @@
             this.btnDangNhap.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnDangNhap.BackColor = System.Drawing.Color.Aqua;
             this.btnDangNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDangNhap.Location = new System.Drawing.Point(135, 277);
+            this.btnDangNhap.Location = new System.Drawing.Point(106, 277);
             this.btnDangNhap.Name = "btnDangNhap";
             this.btnDangNhap.Size = new System.Drawing.Size(88, 40);
             this.btnDangNhap.TabIndex = 5;
@@ -154,7 +184,7 @@
             this.btnDK.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnDK.BackColor = System.Drawing.Color.Aqua;
             this.btnDK.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDK.Location = new System.Drawing.Point(25, 276);
+            this.btnDK.Location = new System.Drawing.Point(12, 276);
             this.btnDK.Name = "btnDK";
             this.btnDK.Size = new System.Drawing.Size(88, 41);
             this.btnDK.TabIndex = 4;
@@ -286,9 +316,14 @@
             this.comboBox2.TabIndex = 0;
             this.comboBox2.ValueMember = "MaLoaiPhong";
             // 
-            // lOAIPHONGBindingSource
+            // txtthongtin
             // 
-            this.lOAIPHONGBindingSource.DataSource = typeof(HomestayApp.LOAIPHONG);
+            this.txtthongtin.Cursor = System.Windows.Forms.Cursors.No;
+            this.txtthongtin.Location = new System.Drawing.Point(50, 5);
+            this.txtthongtin.Multiline = true;
+            this.txtthongtin.Name = "txtthongtin";
+            this.txtthongtin.Size = new System.Drawing.Size(318, 45);
+            this.txtthongtin.TabIndex = 4;
             // 
             // btnDatPhong
             // 
@@ -303,15 +338,6 @@
             this.btnDatPhong.Text = "Đặt phòng";
             this.btnDatPhong.UseVisualStyleBackColor = false;
             this.btnDatPhong.Click += new System.EventHandler(this.btnDatPhong_Click);
-            // 
-            // txtthongtin
-            // 
-            this.txtthongtin.Cursor = System.Windows.Forms.Cursors.No;
-            this.txtthongtin.Location = new System.Drawing.Point(50, 5);
-            this.txtthongtin.Multiline = true;
-            this.txtthongtin.Name = "txtthongtin";
-            this.txtthongtin.Size = new System.Drawing.Size(318, 45);
-            this.txtthongtin.TabIndex = 4;
             // 
             // Form1
             // 
@@ -367,6 +393,8 @@
         private System.Windows.Forms.PictureBox btnSearch;
         private System.Windows.Forms.TextBox txtFind;
         private System.Windows.Forms.TextBox txtthongtin;
+        private System.Windows.Forms.Button btnDangXuat;
+        private System.Windows.Forms.Button btnDanhGia;
     }
 }
 

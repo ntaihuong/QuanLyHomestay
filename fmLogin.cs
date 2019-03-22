@@ -13,6 +13,7 @@ namespace HomestayApp
 {
     public partial class fmLogin : Form
     {
+        QuanLyHomestayEntities db = new QuanLyHomestayEntities();
         public fmLogin()
         {
             InitializeComponent();
@@ -20,18 +21,16 @@ namespace HomestayApp
 
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
-            SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-K8S89SB\SQLEXPRESS;Initial Catalog=QuanLyHomestay;Integrated Security=True");
             try
             {
-                conn.Open();
                 string tk = txtUserName.Text;
                 string mk = txtPassWord.Text;
-                string sql = " Select * from TAIKHOAN where TaiKhoan='"+tk+"' and MatKhau='"+mk+"'";
-                SqlCommand cmd = new SqlCommand(sql, conn);
-                SqlDataReader dta = cmd.ExecuteReader();
-                if(dta.Read()==true)
+                TAIKHOAN taikhoan = (from i in db.TAIKHOANs where i.TaiKhoan1 == tk && i.Matkhau == mk select i).FirstOrDefault();
+                if(taikhoan!=null)
                 {
                     MessageBox.Show("Bạn đã đăng nhập thành công");
+                    this.DialogResult = DialogResult.OK;
+                    this.Close();
                 }
                 else
                 {
@@ -46,7 +45,8 @@ namespace HomestayApp
 
         private void btnThoat_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.DialogResult = DialogResult.Cancel;
+            this.Close();
         }
 
     }

@@ -60,6 +60,9 @@
     <Compile Include="Confirm.Designer.cs">
       <DependentUpon>Confirm.cs</DependentUpon>
     </Compile>
+    <Compile Include="DanhGia.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
     <Compile Include="fmDangKi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,6 +80,12 @@
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fmDanhGia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmDanhGia.Designer.cs">
+      <DependentUpon>fmDanhGia.cs</DependentUpon>
     </Compile>
     <Compile Include="HOADON.cs">
       <DependentUpon>Model1.tt</DependentUpon>
@@ -127,6 +136,9 @@
     <EmbeddedResource Include="fmDangKi.resx">
       <DependentUpon>fmDangKi.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="fmDanhGia.resx">
+      <DependentUpon>fmDanhGia.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fmLogin.resx">
       <DependentUpon>fmLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -149,6 +161,7 @@
       <DependentUpon>Model1.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\DanhGia.datasource" />
     <None Include="Properties\DataSources\HOADON.datasource" />
     <None Include="Properties\DataSources\LOAIPHONG.datasource" />
     <None Include="Properties\DataSources\PHIEUDANGKI.datasource" />
