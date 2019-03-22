@@ -129,7 +129,7 @@
             // 
             this.btnSearch.BackgroundImage = global::HomestayApp.Properties.Resources.search;
             this.btnSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnSearch.Location = new System.Drawing.Point(198, 24);
+            this.btnSearch.Location = new System.Drawing.Point(194, 32);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(41, 30);
             this.btnSearch.TabIndex = 7;
@@ -307,10 +307,10 @@
             // txtthongtin
             // 
             this.txtthongtin.Cursor = System.Windows.Forms.Cursors.No;
-            this.txtthongtin.Location = new System.Drawing.Point(50, 15);
+            this.txtthongtin.Location = new System.Drawing.Point(50, 5);
             this.txtthongtin.Multiline = true;
             this.txtthongtin.Name = "txtthongtin";
-            this.txtthongtin.Size = new System.Drawing.Size(318, 20);
+            this.txtthongtin.Size = new System.Drawing.Size(318, 45);
             this.txtthongtin.TabIndex = 4;
             // 
             // Form1

@@ -36,12 +36,13 @@ namespace HomestayApp
 
         void comboBox2_SelectedValueChanged(object sender, EventArgs e)
         {
-            LOAIPHONG lp = (from i in db.LOAIPHONGs where i.MaLoaiPhong == comboBox2.SelectedValue.ToString() select i).FirstOrDefault();
+            LOAIPHONG lp = (from i in db.LOAIPHONGs where i.MaLoaiPhong == comboBox2.SelectedValue select i).FirstOrDefault();
             if (comboBox2.SelectedValue != null)
             {
                 string pathI = path + "\\Resources\\" + comboBox2.SelectedValue.ToString() + extention;
                 Bitmap bm = new Bitmap(pathI);
                 pictureBox1.Image = bm;
+                txtthongtin.Text = lp.TrangBi;
             }
         }
 
