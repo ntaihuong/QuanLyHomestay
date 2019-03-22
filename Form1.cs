@@ -1,9 +1,11 @@
-﻿using System;
+﻿using HomestayApp.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Resources;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -35,14 +37,23 @@ namespace HomestayApp
             comboBox2.SelectedIndex = 1;
             selectedItem();
         }
+        public static Bitmap GetImageByName(string imageName)
+        {
+            System.Reflection.Assembly asm = System.Reflection.Assembly.GetExecutingAssembly();
+            string resourceName = asm.GetName().Name + ".Properties.Resources";
+            var rm = new System.Resources.ResourceManager(resourceName, asm);
+            return (Bitmap)rm.GetObject(imageName);
+
+        }
         private void selectedItem()
         {
             LOAIPHONG lp = (from i in db.LOAIPHONGs where i.MaLoaiPhong == comboBox2.SelectedValue select i).FirstOrDefault();
             if (comboBox2.SelectedValue != null)
             {
-                string pathI = path + "\\Resources\\" + comboBox2.SelectedValue.ToString() + extention;
-                Bitmap bm = new Bitmap(pathI);
-                pictureBox1.Image = bm;
+
+                string pathI = comboBox2.SelectedValue.ToString();
+                Bitmap bmp = GetImageByName(pathI);
+                pictureBox1.Image = bmp;
                 txtthongtin.Text = lp.TrangBi;
             }
         }
