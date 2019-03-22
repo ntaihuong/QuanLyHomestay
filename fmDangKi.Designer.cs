@@ -289,6 +289,7 @@
             // 
             // fmDangKi
             // 
+            this.AcceptButton = this.btnDangKi;
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
