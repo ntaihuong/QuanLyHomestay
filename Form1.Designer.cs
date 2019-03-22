@@ -47,6 +47,7 @@
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.lOAIPHONGBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.btnDatPhong = new System.Windows.Forms.Button();
+            this.txtthongtin = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -163,10 +164,6 @@
             // 
             // txtFind
             // 
-            this.txtFind.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txtFind.Location = new System.Drawing.Point(25, 32);
-            this.txtFind.Name = "txtFind";
-            this.txtFind.Size = new System.Drawing.Size(167, 22);
             this.txtFind.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.txtFind.Location = new System.Drawing.Point(21, 36);
             this.txtFind.Name = "txtFind";
@@ -241,6 +238,7 @@
             // splitContainer3.Panel2
             // 
             this.splitContainer3.Panel2.BackColor = System.Drawing.Color.White;
+            this.splitContainer3.Panel2.Controls.Add(this.txtthongtin);
             this.splitContainer3.Panel2.Controls.Add(this.btnDatPhong);
             this.splitContainer3.Size = new System.Drawing.Size(502, 331);
             this.splitContainer3.SplitterDistance = 268;
@@ -306,6 +304,15 @@
             this.btnDatPhong.UseVisualStyleBackColor = false;
             this.btnDatPhong.Click += new System.EventHandler(this.btnDatPhong_Click);
             // 
+            // txtthongtin
+            // 
+            this.txtthongtin.Cursor = System.Windows.Forms.Cursors.No;
+            this.txtthongtin.Location = new System.Drawing.Point(50, 15);
+            this.txtthongtin.Multiline = true;
+            this.txtthongtin.Name = "txtthongtin";
+            this.txtthongtin.Size = new System.Drawing.Size(318, 20);
+            this.txtthongtin.TabIndex = 4;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -331,6 +338,7 @@
             this.splitContainer3.Panel1.ResumeLayout(false);
             this.splitContainer3.Panel1.PerformLayout();
             this.splitContainer3.Panel2.ResumeLayout(false);
+            this.splitContainer3.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer3)).EndInit();
             this.splitContainer3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -358,6 +366,7 @@
         private System.Windows.Forms.BindingSource lOAIPHONGBindingSource;
         private System.Windows.Forms.PictureBox btnSearch;
         private System.Windows.Forms.TextBox txtFind;
+        private System.Windows.Forms.TextBox txtthongtin;
     }
 }
 

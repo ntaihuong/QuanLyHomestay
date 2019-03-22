@@ -16,7 +16,7 @@ namespace HomestayApp
     {
         public string HoTen { get; set; }
         public string Email { get; set; }
-        public Nullable<int> Phone { get; set; }
+        public string Phone { get; set; }
         public string TaiKhoan1 { get; set; }
         public string Matkhau { get; set; }
     }

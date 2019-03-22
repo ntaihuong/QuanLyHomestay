@@ -38,7 +38,13 @@ namespace HomestayApp
             }
             else if (rs.checkTK(txtTaikhoan.Text) != true)
                 {
-                    rs.addNew(tAIKHOANBindingSource.DataSource as TAIKHOAN);
+                    TAIKHOAN tk = new TAIKHOAN();
+                tk.HoTen = txtHoten.Text;
+                tk.Email = txtEmail.Text;
+                tk.Matkhau = txtMatKhau.Text;
+                tk.TaiKhoan1 = txtTaikhoan.Text;
+                tk.Phone = txtPhone.Text;
+                    rs.addNew(tk);
                 }
                 else
                 {
