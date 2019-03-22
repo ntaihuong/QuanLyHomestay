@@ -14,7 +14,7 @@ namespace HomestayApp
     {
         QuanLyHomestayEntities db = new QuanLyHomestayEntities();
         string extention = ".jpg";
-        string path = "C:\\Users\\Huong\\Documents\\GitHub\\QuanLyHomestay";
+        string path = System.AppDomain.CurrentDomain.BaseDirectory;
 
         public Form1()
         {
