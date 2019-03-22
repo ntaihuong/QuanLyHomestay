@@ -32,9 +32,10 @@ namespace HomestayApp
         public void init()
         {
             lOAIPHONGBindingSource.DataSource = (from i in db.LOAIPHONGs select i).ToList();
+            comboBox2.SelectedIndex = 1;
+            selectedItem();
         }
-
-        void comboBox2_SelectedValueChanged(object sender, EventArgs e)
+        private void selectedItem()
         {
             LOAIPHONG lp = (from i in db.LOAIPHONGs where i.MaLoaiPhong == comboBox2.SelectedValue select i).FirstOrDefault();
             if (comboBox2.SelectedValue != null)
@@ -44,6 +45,10 @@ namespace HomestayApp
                 pictureBox1.Image = bm;
                 txtthongtin.Text = lp.TrangBi;
             }
+        }
+        void comboBox2_SelectedValueChanged(object sender, EventArgs e)
+        {
+            selectedItem();
         }
 
         private void btnDangNhap_Click(object sender, EventArgs e)
