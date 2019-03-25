@@ -1,9 +1,11 @@
-﻿using System;
+﻿using HomestayApp.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Resources;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -14,12 +16,13 @@ namespace HomestayApp
     {
         QuanLyHomestayEntities db = new QuanLyHomestayEntities();
         string extention = ".jpg";
-        string path = "C:\\Users\\Huong\\Documents\\GitHub\\QuanLyHomestay";
+        string path = System.AppDomain.CurrentDomain.BaseDirectory;
 
         public Form1()
         {
             InitializeComponent();
             init();
+            btnDatPhong.Enabled = false;
             comboBox2.SelectedValueChanged += comboBox2_SelectedValueChanged;
         }
         private static Random random = new Random();
@@ -35,14 +38,23 @@ namespace HomestayApp
             comboBox2.SelectedIndex = 1;
            // selectedItem();
         }
+        public static Bitmap GetImageByName(string imageName)
+        {
+            System.Reflection.Assembly asm = System.Reflection.Assembly.GetExecutingAssembly();
+            string resourceName = asm.GetName().Name + ".Properties.Resources";
+            var rm = new System.Resources.ResourceManager(resourceName, asm);
+            return (Bitmap)rm.GetObject(imageName);
+
+        }
         private void selectedItem()
         {
             LOAIPHONG lp = (from i in db.LOAIPHONGs where i.MaLoaiPhong == comboBox2.SelectedValue select i).FirstOrDefault();
             if (comboBox2.SelectedValue != null)
             {
-                string pathI = path + "\\Resources\\" + comboBox2.SelectedValue.ToString() + extention;
-                Bitmap bm = new Bitmap(pathI);
-                pictureBox1.Image = bm;
+
+                string pathI = comboBox2.SelectedValue.ToString();
+                Bitmap bmp = GetImageByName(pathI);
+                pictureBox1.Image = bmp;
                 txtthongtin.Text = lp.TrangBi;
             }
         }
@@ -54,7 +66,15 @@ namespace HomestayApp
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
             fmLogin frm = new fmLogin();
-            frm.ShowDialog();
+            if( frm.ShowDialog()==DialogResult.OK)
+            {
+
+                btnDatPhong.Enabled = true;
+            }
+            else
+            {
+                return;
+            }
         }
 
         private void btnDK_Click(object sender, EventArgs e)
@@ -102,6 +122,17 @@ namespace HomestayApp
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            btnDatPhong.Enabled = false;
+        }
+
+        private void btnDanhGia_Click(object sender, EventArgs e)
+        {
+            fmDanhGia fm = new fmDanhGia();
+            fm.ShowDialog();
         }
     }
 }
