@@ -36,7 +36,7 @@ namespace HomestayApp
         {
             lOAIPHONGBindingSource.DataSource = (from i in db.LOAIPHONGs select i).ToList();
             comboBox2.SelectedIndex = 1;
-            selectedItem();
+           // selectedItem();
         }
         public static Bitmap GetImageByName(string imageName)
         {
@@ -60,7 +60,7 @@ namespace HomestayApp
         }
         void comboBox2_SelectedValueChanged(object sender, EventArgs e)
         {
-            selectedItem();
+            //selectedItem();
         }
 
         private void btnDangNhap_Click(object sender, EventArgs e)
