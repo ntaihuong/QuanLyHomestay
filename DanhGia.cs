@@ -12,10 +12,10 @@ namespace HomestayApp
     using System;
     using System.Collections.Generic;
     
-    public partial class DanhGia
+    public partial class DANHGIA
     {
-        public string DanhGia1 { get; set; }
         public int STT { get; set; }
         public string MaLoaiPhong { get; set; }
+        public string DanhGia1 { get; set; }
     }
 }

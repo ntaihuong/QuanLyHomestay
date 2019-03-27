@@ -60,7 +60,7 @@ namespace HomestayApp
         }
         void comboBox2_SelectedValueChanged(object sender, EventArgs e)
         {
-            //selectedItem();
+            selectedItem();
         }
 
         private void btnDangNhap_Click(object sender, EventArgs e)
@@ -119,11 +119,6 @@ namespace HomestayApp
             }
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             btnDatPhong.Enabled = false;
@@ -133,6 +128,11 @@ namespace HomestayApp
         {
             fmDanhGia fm = new fmDanhGia();
             fm.ShowDialog();
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

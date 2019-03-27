@@ -25,18 +25,20 @@ namespace HomestayApp
         }
         private void reload()
         {
-            danhGiaBindingSource.DataSource = db.DanhGias.ToList();
+            danhGiaBindingSource.DataSource = db.DANHGIAs.ToList();
             lOAIPHONGBindingSource.DataSource = db.LOAIPHONGs.ToList();
         }
         private void btnGui_Click(object sender, EventArgs e)
         {
-            DanhGia dg = new DanhGia();
+            DANHGIA dg = new DANHGIA();
             dg.MaLoaiPhong = comboBox1.SelectedValue.ToString();
             dg.DanhGia1 = textBox1.Text;
-            db.DanhGias.Add(dg);
+            db.DANHGIAs.Add(dg);
             db.SaveChangesAsync();
             MessageBox.Show("Cảm ơn bạn đã thực hiện đánh giá này.", "thông báo",MessageBoxButtons.OK,MessageBoxIcon.Information);
             this.Close();
         }
+
+      
     }
 }
