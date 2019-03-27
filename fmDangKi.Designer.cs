@@ -34,6 +34,7 @@
             this.lbXNMK = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
             this.txtMatKhau = new System.Windows.Forms.TextBox();
+            this.tAIKHOANBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.lbMhatkhau = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.txtTaikhoan = new System.Windows.Forms.TextBox();
@@ -49,14 +50,13 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.txtHoten = new System.Windows.Forms.TextBox();
             this.lbHoten = new System.Windows.Forms.Label();
-            this.tAIKHOANBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panel6.SuspendLayout();
             this.panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tAIKHOANBindingSource)).BeginInit();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tAIKHOANBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // panel6
@@ -111,6 +111,10 @@
             this.txtMatKhau.Size = new System.Drawing.Size(279, 22);
             this.txtMatKhau.TabIndex = 1;
             // 
+            // tAIKHOANBindingSource
+            // 
+            this.tAIKHOANBindingSource.DataSource = typeof(HomestayApp.TAIKHOAN);
+            // 
             // lbMhatkhau
             // 
             this.lbMhatkhau.AutoSize = true;
@@ -156,7 +160,6 @@
             this.lbTaikhoan.Size = new System.Drawing.Size(62, 16);
             this.lbTaikhoan.TabIndex = 0;
             this.lbTaikhoan.Text = "Tài khoản";
-            this.lbTaikhoan.Click += new System.EventHandler(this.lbTaikhoan_Click);
             // 
             // panel5
             // 
@@ -283,10 +286,6 @@
             this.lbHoten.TabIndex = 0;
             this.lbHoten.Text = "Họ tên";
             // 
-            // tAIKHOANBindingSource
-            // 
-            this.tAIKHOANBindingSource.DataSource = typeof(HomestayApp.TAIKHOAN);
-            // 
             // fmDangKi
             // 
             this.AcceptButton = this.btnDangKi;
@@ -308,11 +307,12 @@
             this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.Name = "fmDangKi";
             this.Text = "fmDangKi";
-            this.Load += new System.EventHandler(this.fmDangKi_Load);
+          
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tAIKHOANBindingSource)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel5.ResumeLayout(false);
@@ -321,7 +321,6 @@
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tAIKHOANBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
