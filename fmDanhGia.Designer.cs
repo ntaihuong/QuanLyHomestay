@@ -96,7 +96,7 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.comboBox1);
             this.Name = "fmDanhGia";
-            this.Text = "Form2";
+            this.Text = "fmDanhGia";
             ((System.ComponentModel.ISupportInitialize)(this.lOAIPHONGBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.danhGiaBindingSource)).EndInit();
             this.ResumeLayout(false);
