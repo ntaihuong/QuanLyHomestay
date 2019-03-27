@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26430.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomestayApp", "HomestayApp.csproj", "{B29B30CA-7B6F-4387-8542-FC0ABE1875E8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DangNhapTester", "..\DangNhapTester\DangNhapTester.csproj", "{F024551A-1EC6-46FD-967A-ACF9E1246388}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{B29B30CA-7B6F-4387-8542-FC0ABE1875E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B29B30CA-7B6F-4387-8542-FC0ABE1875E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B29B30CA-7B6F-4387-8542-FC0ABE1875E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F024551A-1EC6-46FD-967A-ACF9E1246388}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F024551A-1EC6-46FD-967A-ACF9E1246388}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F024551A-1EC6-46FD-967A-ACF9E1246388}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F024551A-1EC6-46FD-967A-ACF9E1246388}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
