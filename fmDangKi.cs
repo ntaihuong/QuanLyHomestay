@@ -16,6 +16,7 @@ namespace HomestayApp
         public fmDangKi()
         {
             InitializeComponent();
+            db = new QuanLyHomestayEntities();
         }
 
         private void btnThoat_Click(object sender, EventArgs e)
@@ -25,27 +26,37 @@ namespace HomestayApp
 
         private void btnDangKi_Click(object sender, EventArgs e)
         {
-            
-            if (Register.checkMK(txtMatKhau.Text, txtXNMK.Text)==false)
+
+            if (Register.checkMK(txtMatKhau.Text, txtXNMK.Text) == false)
             {
                 MessageBox.Show("mật khẩu xác nhận không đúng", "thông báo", MessageBoxButtons.OKCancel);
 
             }
             else if (Register.checkTK(txtTaikhoan.Text) != true)
+            {
+                TAIKHOAN tk = new TAIKHOAN();
+                tk.HoTen = txtHoten.Text;
+                tk.Email = txtEmail.Text;
+                tk.Matkhau = txtMatKhau.Text;
+                tk.TaiKhoan1 = txtTaikhoan.Text;
+                tk.Phone = txtPhone.Text;
+                if (txtMatKhau.TextLength < 8 && txtMatKhau.TextLength > 16)
                 {
-                    TAIKHOAN tk = new TAIKHOAN();
-                    tk.HoTen = txtHoten.Text;
-                    tk.Email = txtEmail.Text;
-                    tk.Matkhau = txtMatKhau.Text;
-                    tk.TaiKhoan1 = txtTaikhoan.Text;
-                    tk.Phone = txtPhone.Text;
-                    Register.addNew(db,tk);
+                    MessageBox.Show("Mật khẩu quá ngắn, mật khẩu tối thiểu là 8 kí tự và tối đa là 15 kí tự. \n\n Xin vui lòng nhập lại mật khẩu.", "", MessageBoxButtons.OKCancel);
+                    txtMatKhau.Focus();
+                }
+                else
+                if (Register.addNew(db, tk))
+                {
+                    MessageBox.Show("Đăng ký thành công.", "Thông báo", MessageBoxButtons.OKCancel);
+                    db.SaveChanges();
                 }
                 else
                 {
-                    MessageBox.Show("tên tài khoản đã tồn tại", "thông báo", MessageBoxButtons.OKCancel);
+                    MessageBox.Show("Đăng ký không thành công. \n\nXin vui lòng đăng ký lai.", "Thông báo", MessageBoxButtons.OKCancel);
                 }
-                    
+
+            }
         }
     }
 }

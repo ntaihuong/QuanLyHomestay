@@ -21,13 +21,14 @@ namespace HomestayApp
         }
         public static bool addNew(QuanLyHomestayEntities db, TAIKHOAN a)
         {
-            db = new QuanLyHomestayEntities();
-            if (a.HoTen == null) return false;
-            if (a.Phone == null) return false;
-            if (a != null)
+            if (a.HoTen == null || a.HoTen=="") return false;
+            else if (a.Phone == null || a.Phone == "") return false;
+            else if (a.Matkhau == null || a.Matkhau == "") return false;
+            else if (a.TaiKhoan1 == null || a.TaiKhoan1 == "") return false;
+            else if (a != null)
             {
-                    db.TAIKHOANs.Add(a);
-                db.SaveChanges();
+                db.TAIKHOANs.Add(a);
+                //db.SaveChanges();
                 return true;
             }
             else

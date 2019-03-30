@@ -74,7 +74,9 @@
             // 
             this.txtXNMK.Location = new System.Drawing.Point(147, 14);
             this.txtXNMK.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.txtXNMK.MaxLength = 15;
             this.txtXNMK.Name = "txtXNMK";
+            this.txtXNMK.PasswordChar = '*';
             this.txtXNMK.Size = new System.Drawing.Size(279, 22);
             this.txtXNMK.TabIndex = 1;
             // 
@@ -107,7 +109,9 @@
             this.txtMatKhau.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tAIKHOANBindingSource, "Matkhau", true));
             this.txtMatKhau.Location = new System.Drawing.Point(147, 11);
             this.txtMatKhau.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.txtMatKhau.MaxLength = 15;
             this.txtMatKhau.Name = "txtMatKhau";
+            this.txtMatKhau.PasswordChar = '*';
             this.txtMatKhau.Size = new System.Drawing.Size(279, 22);
             this.txtMatKhau.TabIndex = 1;
             // 
@@ -307,7 +311,6 @@
             this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.Name = "fmDangKi";
             this.Text = "fmDangKi";
-          
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             this.panel7.ResumeLayout(false);

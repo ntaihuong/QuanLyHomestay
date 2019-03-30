@@ -67,7 +67,7 @@
           <Property Name="Email" Type="varchar" MaxLength="50" />
           <Property Name="Phone" Type="varchar" MaxLength="50" />
           <Property Name="TaiKhoan" Type="varchar" MaxLength="50" Nullable="false" />
-          <Property Name="Matkhau" Type="varchar" MaxLength="10" />
+          <Property Name="Matkhau" Type="varchar" MaxLength="15" />
         </EntityType>
         <EntityContainer Name="QuanLyHomestayModelStoreContainer">
           <EntitySet Name="DANHGIA" EntityType="Self.DANHGIA" Schema="dbo" store:Type="Tables" />
@@ -134,7 +134,7 @@
           <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="Phone" Type="String" ConcurrencyMode="None" MaxLength="50" Unicode="false" FixedLength="false" />
           <Property Name="TaiKhoan1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="Matkhau" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Matkhau" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityContainer Name="QuanLyHomestayEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="HOADONs" EntityType="Self.HOADON" />
