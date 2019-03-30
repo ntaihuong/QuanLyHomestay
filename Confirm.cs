@@ -62,7 +62,7 @@ namespace HomestayApp
         {
             if(status.Equals("add"))
             {
-                db.HOADONs.Add(hd);
+                
             }        
             else
             {

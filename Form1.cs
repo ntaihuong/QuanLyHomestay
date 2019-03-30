@@ -16,13 +16,13 @@ namespace HomestayApp
     {
         QuanLyHomestayEntities db = new QuanLyHomestayEntities();
         string extention = ".jpg";
+        bool dangnhap =false;
         string path = System.AppDomain.CurrentDomain.BaseDirectory;
 
         public Form1()
         {
             InitializeComponent();
             init();
-            btnDatPhong.Enabled = false;
             comboBox2.SelectedValueChanged += comboBox2_SelectedValueChanged;
         }
         private static Random random = new Random();
@@ -69,7 +69,7 @@ namespace HomestayApp
             if( frm.ShowDialog()==DialogResult.OK)
             {
 
-                btnDatPhong.Enabled = true;
+                dangnhap = true;
             }
             else
             {
@@ -103,10 +103,15 @@ namespace HomestayApp
         {
             HOADON hd = Picked(comboBox2.SelectedValue.ToString(), dateTimePicker1.Value, dateTimePicker2.Value);
             Confirm fm = new Confirm(hd, "add");
-            if (fm.ShowDialog() == DialogResult.OK)
+            if (dangnhap)
             {
+                if (fm.ShowDialog() == DialogResult.OK)
+                {
 
+                }
             }
+            else
+                MessageBox.Show("Yêu cầu đăng nhập.", "Cảnh báo!!!", MessageBoxButtons.OK);
         }
 
         private void btnSearch_Click(object sender, EventArgs e)
@@ -121,7 +126,7 @@ namespace HomestayApp
 
         private void button1_Click(object sender, EventArgs e)
         {
-            btnDatPhong.Enabled = false;
+            dangnhap = false;
         }
 
         private void btnDanhGia_Click(object sender, EventArgs e)

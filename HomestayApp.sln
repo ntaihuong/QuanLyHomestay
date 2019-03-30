@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DangKyTester", "DangKyTeste
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DangNhapTester", "DangNhapTester\DangNhapTester.csproj", "{C994F0A5-0E38-4AFF-9047-818670FD1CDE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatPhongTester", "DatPhongTester\DatPhongTester.csproj", "{33E52C8D-5E38-40B6-82E9-6E7E539AD5D1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{C994F0A5-0E38-4AFF-9047-818670FD1CDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C994F0A5-0E38-4AFF-9047-818670FD1CDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C994F0A5-0E38-4AFF-9047-818670FD1CDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33E52C8D-5E38-40B6-82E9-6E7E539AD5D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33E52C8D-5E38-40B6-82E9-6E7E539AD5D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33E52C8D-5E38-40B6-82E9-6E7E539AD5D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33E52C8D-5E38-40B6-82E9-6E7E539AD5D1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
