@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 namespace HomestayApp
 {
     
-    class Register
+    public static class Register
     {
-        private QuanLyHomestayEntities db = new QuanLyHomestayEntities();
-        TAIKHOAN tk;
-        public bool checkMK(string a,string b)
+        //private static QuanLyHomestayEntities db = new QuanLyHomestayEntities();
+        public static TAIKHOAN tk;
+        public static bool checkMK(string a,string b)
         {
             if(a.Equals(b))
             {
@@ -19,18 +19,24 @@ namespace HomestayApp
             }
             return false;
         }
-        public void addNew(TAIKHOAN a)
+        public static bool addNew(QuanLyHomestayEntities db, TAIKHOAN a)
         {
-            if (a != null)
+            if (a.HoTen == null || a.HoTen=="") return false;
+            else if (a.Phone == null || a.Phone == "") return false;
+            else if (a.Matkhau == null || a.Matkhau == "") return false;
+            else if (a.TaiKhoan1 == null || a.TaiKhoan1 == "") return false;
+            else if (a != null)
             {
                 db.TAIKHOANs.Add(a);
-                db.SaveChanges();
+                //db.SaveChanges();
+                return true;
             }
             else
-                return;
+                return false;
         }
-        public bool checkTK(string a)
+        public static bool checkTK(string a)
         {
+            QuanLyHomestayEntities db = new QuanLyHomestayEntities();
             TAIKHOAN s = (from i in db.TAIKHOANs where i.TaiKhoan1.Equals(a) select i).FirstOrDefault();
             if (s != null) return true;
             return false;

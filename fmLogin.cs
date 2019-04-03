@@ -21,25 +21,16 @@ namespace HomestayApp
 
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
-            try
+            
+            if (Login.testLogin(txtUserName.Text, txtPassWord.Text) == true)
             {
-                string tk = txtUserName.Text;
-                string mk = txtPassWord.Text;
-                TAIKHOAN taikhoan = (from i in db.TAIKHOANs where i.TaiKhoan1 == tk && i.Matkhau == mk select i).FirstOrDefault();
-                if(taikhoan!=null)
-                {
-                    MessageBox.Show("Bạn đã đăng nhập thành công");
-                    this.DialogResult = DialogResult.OK;
-                    this.Close();
-                }
-                else
-                {
-                    MessageBox.Show("Đăng nhập thất bại. Vui lòng đăng nhập lại");
-                }
+                MessageBox.Show("Đăng nhập thành công");
+                this.DialogResult = DialogResult.OK;
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Lỗi kết nối");
+
+            else
+            { 
+                MessageBox.Show("Đăng nhập thất bại. Vui lòng đăng nhập lại");
             }
         }
 
@@ -49,9 +40,13 @@ namespace HomestayApp
             this.Close();
         }
 
+<<<<<<< HEAD
         private void fmLogin_Load(object sender, EventArgs e)
         {
 
         }
+=======
+       
+>>>>>>> 6b8ab4e9f5f04f87818064ac28e7849242d8e363
     }
 }

@@ -155,7 +155,11 @@
             this.Controls.Add(this.panel1);
             this.Name = "fmLogin";
             this.Text = "fmLogin";
+<<<<<<< HEAD
             this.Load += new System.EventHandler(this.fmLogin_Load);
+=======
+
+>>>>>>> 6b8ab4e9f5f04f87818064ac28e7849242d8e363
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
