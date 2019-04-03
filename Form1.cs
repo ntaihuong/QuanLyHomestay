@@ -126,7 +126,12 @@ namespace HomestayApp
 
         private void button1_Click(object sender, EventArgs e)
         {
-            dangnhap = false;
+            if(dangnhap)
+            {
+                dangnhap = false;
+                MessageBox.Show("Bạn đã đăng xuất thành công.");
+            }
+            
         }
 
         private void btnDanhGia_Click(object sender, EventArgs e)
@@ -138,6 +143,15 @@ namespace HomestayApp
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void dateTimePicker2_ValueChanged(object sender, EventArgs e)
+        {
+            if(dateTimePicker1.Value > dateTimePicker2.Value)
+            {
+                MessageBox.Show("Lỗi chọn ngày, ngày đi phải sau ngày đến, xin quý khách chọn lại.");
+
+            }
         }
     }
 }

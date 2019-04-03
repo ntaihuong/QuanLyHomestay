@@ -62,15 +62,18 @@ namespace HomestayApp
         {
             if(status.Equals("add"))
             {
-                
+                if (DatPhong.addnewHoaDon(db, hd))
+                    MessageBox.Show("Cảm ơn bạn đã sử dụng dịch vụ của chúng tôi. Xin quý khách ghi nhớ mã hóa đơn để tiện cho việc nhận phòng. \n\n Mã hóa đơn của bạn là: " + hd.MaHoaDon, "thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                else
+                    MessageBox.Show("Đặt phòng không thành công.");
+                this.Close();
             }        
             else
             {
                 hd.MaLoaiPhong = comboBox1.SelectedValue.ToString();
             }
             db.SaveChanges();
-            this.Close();
-            MessageBox.Show("Cảm ơn bạn đã sử dụng dịch vụ của chúng tôi \n\n Mã hóa đơn của bạn là: " + hd.MaHoaDon, "thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            this.Close();          
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -82,11 +85,6 @@ namespace HomestayApp
             {
                 return;
             }
-        }
-
-        private void comboBox1_SelectedValueChanged(object sender, EventArgs e)
-        {
-            
         }
     }
 }

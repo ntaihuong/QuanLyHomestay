@@ -88,6 +88,26 @@ namespace DatPhongTester
         }
 
         [TestMethod]
+        public void TestDatPhongNgayDiBeHonNgayDen()
+        {
+            QuanLyHomestayEntities db = new QuanLyHomestayEntities();
+            HOADON hd = new HOADON();
+            hd.NgayDen = DateTime.Parse("5/25/2019");
+            hd.NgayDi = DateTime.Parse("5/20/2019");
+            hd.MaLoaiPhong = "NC1";
+            hd.GiaTien = "299000";
+            hd.DonVi = "VND";
+            hd.SoTienDatTruoc = null;
+            hd.MaHoaDon = "E72G4TC8";
+            hd.NgayThanhToan = DateTime.Parse("5/20/2019");
+
+            bool expected = false;
+            bool actual = DatPhong.addnewHoaDon(db, hd);
+
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
         public void TestDatPhongKhongMaLoaiPhong()
         {
             QuanLyHomestayEntities db = new QuanLyHomestayEntities();

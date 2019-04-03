@@ -93,6 +93,7 @@
             // 
             this.txtPassWord.Location = new System.Drawing.Point(133, 12);
             this.txtPassWord.Name = "txtPassWord";
+            this.txtPassWord.PasswordChar = '*';
             this.txtPassWord.Size = new System.Drawing.Size(188, 20);
             this.txtPassWord.TabIndex = 1;
             // 
@@ -155,7 +156,6 @@
             this.Controls.Add(this.panel1);
             this.Name = "fmLogin";
             this.Text = "fmLogin";
-
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();

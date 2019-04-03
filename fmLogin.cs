@@ -24,13 +24,13 @@ namespace HomestayApp
             
             if (Login.testLogin(txtUserName.Text, txtPassWord.Text) == true)
             {
-                MessageBox.Show("Đăng nhập thành công");
+                MessageBox.Show("Đăng nhập thành công.");
                 this.DialogResult = DialogResult.OK;
             }
 
             else
             { 
-                MessageBox.Show("Đăng nhập thất bại. Vui lòng đăng nhập lại");
+                MessageBox.Show("Đăng nhập thất bại. Vui lòng đăng nhập lại.");
             }
         }
 

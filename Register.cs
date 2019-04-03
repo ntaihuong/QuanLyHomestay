@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace HomestayApp
 {
-    
+
     public static class Register
     {
         //private static QuanLyHomestayEntities db = new QuanLyHomestayEntities();
         public static TAIKHOAN tk;
-        public static bool checkMK(string a,string b)
+        public static bool checkMK(string a, string b)
         {
-            if(a.Equals(b))
+            if (a.Equals(b))
             {
                 return true;
             }
@@ -21,7 +21,7 @@ namespace HomestayApp
         }
         public static bool addNew(QuanLyHomestayEntities db, TAIKHOAN a)
         {
-            if (a.HoTen == null || a.HoTen=="") return false;
+            if (a.HoTen == null || a.HoTen == "") return false;
             else if (a.Phone == null || a.Phone == "") return false;
             else if (a.Matkhau == null || a.Matkhau == "") return false;
             else if (a.TaiKhoan1 == null || a.TaiKhoan1 == "") return false;
@@ -40,6 +40,11 @@ namespace HomestayApp
             TAIKHOAN s = (from i in db.TAIKHOANs where i.TaiKhoan1.Equals(a) select i).FirstOrDefault();
             if (s != null) return true;
             return false;
+        }
+        public static List<TAIKHOAN> LayDuLieu()
+        {
+            QuanLyHomestayEntities db = new QuanLyHomestayEntities();
+            return (from i in db.TAIKHOANs select i).ToList();
         }
     }
 }

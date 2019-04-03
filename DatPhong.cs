@@ -11,6 +11,7 @@ namespace HomestayApp
         public static bool addnewHoaDon(QuanLyHomestayEntities db,HOADON hd)
         {
             if (hd.NgayDen == null) return false;
+            else if (hd.NgayDen > hd.NgayDi) return false;
             else if (hd.NgayDi == null) return false;
             else if (hd.MaLoaiPhong == null) return false;
             else if (hd.MaHoaDon == null) return false;
