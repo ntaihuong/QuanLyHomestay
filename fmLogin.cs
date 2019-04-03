@@ -49,5 +49,9 @@ namespace HomestayApp
             this.Close();
         }
 
+        private void fmLogin_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -88,5 +88,10 @@ namespace HomestayApp
         {
             
         }
+
+        private void Confirm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
