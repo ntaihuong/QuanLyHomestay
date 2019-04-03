@@ -40,6 +40,13 @@ namespace HomestayApp
             this.Close();
         }
 
+<<<<<<< HEAD
+        private void fmLogin_Load(object sender, EventArgs e)
+        {
+
+        }
+=======
        
+>>>>>>> 6b8ab4e9f5f04f87818064ac28e7849242d8e363
     }
 }

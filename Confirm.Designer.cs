@@ -242,6 +242,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Confirm";
             this.Text = "Xác Nhận Đặt Phòng";
+            this.Load += new System.EventHandler(this.Confirm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lOAIPHONGBindingSource)).EndInit();
             this.ResumeLayout(false);

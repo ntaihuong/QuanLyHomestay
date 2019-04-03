@@ -86,5 +86,18 @@ namespace HomestayApp
                 return;
             }
         }
+<<<<<<< HEAD
+=======
+
+        private void comboBox1_SelectedValueChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void Confirm_Load(object sender, EventArgs e)
+        {
+
+        }
+>>>>>>> 4d31c217c7c6264ea45690c24a24c3acb2c879a3
     }
 }

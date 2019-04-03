@@ -103,7 +103,7 @@
             this.label1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label1.Location = new System.Drawing.Point(6, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(66, 16);
+            this.label1.Size = new System.Drawing.Size(64, 16);
             this.label1.TabIndex = 0;
             this.label1.Text = "Mật khẩu";
             // 
@@ -130,7 +130,7 @@
             this.lbTDN.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lbTDN.Location = new System.Drawing.Point(6, 13);
             this.lbTDN.Name = "lbTDN";
-            this.lbTDN.Size = new System.Drawing.Size(104, 16);
+            this.lbTDN.Size = new System.Drawing.Size(101, 16);
             this.lbTDN.TabIndex = 0;
             this.lbTDN.Text = "Tên đăng nhập";
             // 
@@ -156,6 +156,14 @@
             this.Controls.Add(this.panel1);
             this.Name = "fmLogin";
             this.Text = "fmLogin";
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+            this.Load += new System.EventHandler(this.fmLogin_Load);
+=======
+
+>>>>>>> 6b8ab4e9f5f04f87818064ac28e7849242d8e363
+>>>>>>> 4d31c217c7c6264ea45690c24a24c3acb2c879a3
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
