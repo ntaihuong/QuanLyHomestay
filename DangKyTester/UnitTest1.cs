@@ -9,7 +9,7 @@ namespace DangKyTester
     public class UnitTest1
     {
         [TestMethod]
-        public void TestMethod1()
+        public void TestLayDuLieu()
         {
             List<TAIKHOAN> taikhoan = new List<TAIKHOAN>();
             bool expected = true;
