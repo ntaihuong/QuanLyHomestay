@@ -86,5 +86,12 @@ namespace HomestayApp
                 return;
             }
         }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            DatPhong.deletePhong(db, hd);
+            MessageBox.Show("Bạn đã xóa phòng thành công.");
+            this.Close();
+        }
     }
 }

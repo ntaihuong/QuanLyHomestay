@@ -159,5 +159,22 @@ namespace DangKyTester
 
             Assert.AreEqual(expected, actual);
         }
+
+        [TestMethod]
+        public void TestDangKyTrungTaiKhoan()
+        {
+            QuanLyHomestayEntities db = new QuanLyHomestayEntities();
+            TAIKHOAN tk = new TAIKHOAN();
+            tk.HoTen = "Nguyễn Văn A";
+            tk.Email = "VanA@gmail.com";
+            tk.Phone = "0909123456";
+            tk.TaiKhoan1 = "yeupanhmaj";
+            tk.Matkhau = "789789789";
+
+            bool expected = false;
+            bool actual = Register.addNew(db, tk);
+
+            Assert.AreEqual(expected, actual);
+        }
     }
 }

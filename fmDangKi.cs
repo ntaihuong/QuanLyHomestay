@@ -57,6 +57,11 @@ namespace HomestayApp
                 }
 
             }
+            else
+            {
+                MessageBox.Show("Tài khoản này hiện đã tồn tại. \n\nXin vui lòng nhập tài khoản khác.", "Thông báo", MessageBoxButtons.OKCancel);
+            }
+
         }
     }
 }

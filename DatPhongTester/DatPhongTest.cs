@@ -174,12 +174,32 @@ namespace DatPhongTester
             HOADON hd = new HOADON();
             hd.NgayDen = DateTime.Parse("5/20/2019");
             hd.NgayDi = DateTime.Parse("5/25/2019");
-            hd.MaLoaiPhong = null;
+            hd.MaLoaiPhong = "NC1";
             hd.GiaTien = "299000";
             hd.DonVi = "VND";
             hd.SoTienDatTruoc = null;
-            hd.MaHoaDon = "E72G4TC7";
+            hd.MaHoaDon = "E72G4TC8";
             hd.NgayThanhToan = null;
+
+            bool expected = true;
+            bool actual = DatPhong.addnewHoaDon(db, hd);
+
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void TestDatPhongNgayKhongHL()
+        {
+            QuanLyHomestayEntities db = new QuanLyHomestayEntities();
+            HOADON hd = new HOADON();
+            hd.NgayDen = DateTime.Parse("4/1/2019");
+            hd.NgayDi = DateTime.Parse("4/4/2019");
+            hd.MaLoaiPhong = "NC1";
+            hd.GiaTien = "299000";
+            hd.DonVi = "VND";
+            hd.SoTienDatTruoc = null;
+            hd.MaHoaDon = "E72G4TC4";
+            hd.NgayThanhToan = DateTime.Parse("4/1/2019"); 
 
             bool expected = false;
             bool actual = DatPhong.addnewHoaDon(db, hd);

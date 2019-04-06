@@ -153,5 +153,15 @@ namespace HomestayApp
 
             }
         }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+            DateTime dt = System.DateTime.Today;
+            if(dateTimePicker1.Value < dt)
+            {
+                MessageBox.Show("Ngày không hợp lệ.");
+                dateTimePicker1.Value = dt;
+            }
+        }
     }
 }

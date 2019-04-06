@@ -89,9 +89,9 @@
             this.lbXNMK.Location = new System.Drawing.Point(5, 14);
             this.lbXNMK.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lbXNMK.Name = "lbXNMK";
-            this.lbXNMK.Size = new System.Drawing.Size(114, 16);
+            this.lbXNMK.Size = new System.Drawing.Size(121, 16);
             this.lbXNMK.TabIndex = 0;
-            this.lbXNMK.Text = "Xác nhật mật khẩu";
+            this.lbXNMK.Text = "Xác nhật mật khẩu *";
             // 
             // panel7
             // 
@@ -128,9 +128,9 @@
             this.lbMhatkhau.Location = new System.Drawing.Point(5, 14);
             this.lbMhatkhau.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lbMhatkhau.Name = "lbMhatkhau";
-            this.lbMhatkhau.Size = new System.Drawing.Size(62, 16);
+            this.lbMhatkhau.Size = new System.Drawing.Size(69, 16);
             this.lbMhatkhau.TabIndex = 0;
-            this.lbMhatkhau.Text = "Mật khẩu";
+            this.lbMhatkhau.Text = "Mật khẩu *";
             // 
             // panel4
             // 
@@ -161,9 +161,9 @@
             this.lbTaikhoan.Location = new System.Drawing.Point(5, 14);
             this.lbTaikhoan.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lbTaikhoan.Name = "lbTaikhoan";
-            this.lbTaikhoan.Size = new System.Drawing.Size(62, 16);
+            this.lbTaikhoan.Size = new System.Drawing.Size(69, 16);
             this.lbTaikhoan.TabIndex = 0;
-            this.lbTaikhoan.Text = "Tài khoản";
+            this.lbTaikhoan.Text = "Tài khoản *";
             // 
             // panel5
             // 
@@ -194,9 +194,9 @@
             this.lbPhone.Location = new System.Drawing.Point(5, 14);
             this.lbPhone.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lbPhone.Name = "lbPhone";
-            this.lbPhone.Size = new System.Drawing.Size(42, 16);
+            this.lbPhone.Size = new System.Drawing.Size(49, 16);
             this.lbPhone.TabIndex = 0;
-            this.lbPhone.Text = "Phone";
+            this.lbPhone.Text = "Phone *";
             // 
             // btnThoat
             // 
@@ -286,9 +286,9 @@
             this.lbHoten.Location = new System.Drawing.Point(5, 14);
             this.lbHoten.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lbHoten.Name = "lbHoten";
-            this.lbHoten.Size = new System.Drawing.Size(45, 16);
+            this.lbHoten.Size = new System.Drawing.Size(52, 16);
             this.lbHoten.TabIndex = 0;
-            this.lbHoten.Text = "Họ tên";
+            this.lbHoten.Text = "Họ tên *";
             // 
             // fmDangKi
             // 

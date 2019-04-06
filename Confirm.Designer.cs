@@ -184,6 +184,7 @@
             this.btnXoa.Text = "Xóa Phòng Hiện Tại";
             this.btnXoa.UseVisualStyleBackColor = false;
             this.btnXoa.Visible = false;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // textBox1
             // 
@@ -209,7 +210,6 @@
             this.comboBox1.ValueMember = "MaLoaiPhong";
             this.comboBox1.Visible = false;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
-       
             // 
             // lOAIPHONGBindingSource
             // 
