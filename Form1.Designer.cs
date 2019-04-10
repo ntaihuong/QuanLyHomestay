@@ -332,7 +332,7 @@
             // 
             this.btnDatPhong.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnDatPhong.BackColor = System.Drawing.Color.White;
-            this.btnDatPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnDatPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnDatPhong.ForeColor = System.Drawing.Color.Blue;
             this.btnDatPhong.Location = new System.Drawing.Point(370, 5);
             this.btnDatPhong.Name = "btnDatPhong";

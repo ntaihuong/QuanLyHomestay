@@ -215,7 +215,7 @@
             // 
             this.btnDangKi.BackColor = System.Drawing.Color.White;
             this.btnDangKi.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDangKi.Location = new System.Drawing.Point(160, 487);
+            this.btnDangKi.Location = new System.Drawing.Point(153, 487);
             this.btnDangKi.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.btnDangKi.Name = "btnDangKi";
             this.btnDangKi.Size = new System.Drawing.Size(72, 37);
