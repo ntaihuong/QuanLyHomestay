@@ -22,10 +22,11 @@ namespace HomestayApp
         public static bool addNew(QuanLyHomestayEntities db, TAIKHOAN a)
         {
             if (checkTK(a.TaiKhoan1)) return false;
-            else if (a.Matkhau.Length <= 8 || a.Matkhau.Length > 16) return false;
+            else if (a.Matkhau == null || a.Matkhau == "") return false;
+            else if (a.Matkhau.Length < 8 || a.Matkhau.Length > 16) return false;
             else if (a.HoTen == null || a.HoTen == "") return false;
             else if (a.Phone == null || a.Phone == "") return false;
-            else if (a.Matkhau == null || a.Matkhau == "") return false;
+        
             else if (a.TaiKhoan1 == null || a.TaiKhoan1 == "") return false;
             else if (a != null)
             {
