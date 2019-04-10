@@ -134,7 +134,7 @@ namespace DangKyTester
             tk.HoTen = "Nguyễn Thanh Bình";
             tk.Email = null;
             tk.Phone = "0956557108";
-            tk.TaiKhoan1 = null;
+            tk.TaiKhoan1 = "thanhbinh123";
             tk.Matkhau = "1235456";
 
             bool expected = false;
@@ -151,7 +151,7 @@ namespace DangKyTester
             tk.HoTen = "Nguyễn Thanh Bình";
             tk.Email = null;
             tk.Phone = "0956557108";
-            tk.TaiKhoan1 = null;
+            tk.TaiKhoan1 = "thanhbinh12";
             tk.Matkhau = "123456789123456789";
 
             bool expected = false;
