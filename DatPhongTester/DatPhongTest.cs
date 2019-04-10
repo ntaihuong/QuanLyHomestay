@@ -99,7 +99,7 @@ namespace DatPhongTester
             hd.DonVi = "VND";
             hd.SoTienDatTruoc = null;
             hd.MaHoaDon = "E72G4TC8";
-            hd.NgayThanhToan = DateTime.Parse("5/20/2019");
+            hd.NgayThanhToan = DateTime.Parse("5/25/2019");
 
             bool expected = false;
             bool actual = DatPhong.addnewHoaDon(db, hd);
