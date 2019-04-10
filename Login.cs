@@ -12,7 +12,7 @@ namespace HomestayApp
         private static QuanLyHomestayEntities db = new QuanLyHomestayEntities();
         public static bool testLogin(string tk, string mk)
         {
-            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-T99N63L\\SQLEXPRESS2012;Initial Catalog=QuanLyHomestay;Integrated Security=True"); 
+            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-K8S89SB\\SQLEXPRESS;Initial Catalog=QuanLyHomestay;Integrated Security=True"); 
            try
             {
                 conn.Open();

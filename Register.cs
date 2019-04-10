@@ -26,10 +26,6 @@ namespace HomestayApp
             else if (a.Matkhau.Length < 8 || a.Matkhau.Length > 16) return false;
             else if (a.HoTen == null || a.HoTen == "") return false;
             else if (a.Phone == null || a.Phone == "") return false;
-<<<<<<< HEAD
-=======
-        
->>>>>>> d93679e2f0bc28becd2adab9f7a064fc0d13a089
             else if (a.TaiKhoan1 == null || a.TaiKhoan1 == "") return false;
             else if (a != null)
             {
