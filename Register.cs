@@ -30,7 +30,7 @@ namespace HomestayApp
             else if (a != null)
             {
                 db.TAIKHOANs.Add(a);
-                //db.SaveChanges();
+                db.SaveChanges();
                 return true;
             }
             else
