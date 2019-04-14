@@ -8,11 +8,10 @@
         <EntityType Name="DANHGIA">
           <Key>
             <PropertyRef Name="STT" />
-            <PropertyRef Name="MaLoaiPhong" />
           </Key>
           <Property Name="STT" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="MaLoaiPhong" Type="varchar" MaxLength="50" Nullable="false" />
-          <Property Name="DanhGia" Type="nvarchar(max)" />
+          <Property Name="MaLoaiPhong" Type="varchar" MaxLength="255" />
+          <Property Name="DanhGia" Type="varchar" MaxLength="255" />
         </EntityType>
         <EntityType Name="HOADON">
           <Key>
@@ -147,11 +146,10 @@
         <EntityType Name="DANHGIA">
           <Key>
             <PropertyRef Name="STT" />
-            <PropertyRef Name="MaLoaiPhong" />
           </Key>
           <Property Name="STT" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="MaLoaiPhong" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
-          <Property Name="DanhGia1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="MaLoaiPhong" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="DanhGia1" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
         </EntityType>
       </Schema>
     </edmx:ConceptualModels>

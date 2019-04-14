@@ -29,7 +29,7 @@ namespace HomestayApp
 
             if (Register.checkMK(txtMatKhau.Text, txtXNMK.Text) == false)
             {
-                MessageBox.Show("mật khẩu xác nhận không đúng", "thông báo", MessageBoxButtons.OKCancel);
+                MessageBox.Show("Mật khẩu xác nhận không đúng", "Thông báo", MessageBoxButtons.OKCancel);
 
             }
             else if (Register.checkTK(txtTaikhoan.Text) != true)

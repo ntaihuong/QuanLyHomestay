@@ -34,8 +34,8 @@ namespace HomestayApp
             dg.MaLoaiPhong = comboBox1.SelectedValue.ToString();
             dg.DanhGia1 = textBox1.Text;
             db.DANHGIAs.Add(dg);
-            db.SaveChangesAsync();
-            MessageBox.Show("Cảm ơn bạn đã thực hiện đánh giá này.", "thông báo",MessageBoxButtons.OK,MessageBoxIcon.Information);
+            db.SaveChanges();
+            MessageBox.Show("Cảm ơn bạn đã thực hiện đánh giá này.", "Thông báo",MessageBoxButtons.OK,MessageBoxIcon.Information);
             this.Close();
         }
 
