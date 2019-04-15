@@ -40,7 +40,7 @@ namespace HomestayApp
                 tk.Matkhau = txtMatKhau.Text;
                 tk.TaiKhoan1 = txtTaikhoan.Text;
                 tk.Phone = txtPhone.Text;
-                if (txtMatKhau.TextLength < 8 && txtMatKhau.TextLength > 16)
+                if (txtMatKhau.TextLength < 8 || txtMatKhau.TextLength > 16)
                 {
                     MessageBox.Show("Mật khẩu quá ngắn, mật khẩu tối thiểu là 8 kí tự và tối đa là 15 kí tự. \n\n Xin vui lòng nhập lại mật khẩu.", "", MessageBoxButtons.OKCancel);
                     txtMatKhau.Focus();

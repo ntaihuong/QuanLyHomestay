@@ -71,6 +71,8 @@ namespace HomestayApp
             else
             {
                 hd.MaLoaiPhong = comboBox1.SelectedValue.ToString();
+                hd.GiaTien = textBox4.Text;
+                MessageBox.Show("Bạn đã đổi phòng thành công.");
             }
             db.SaveChanges();
             this.Close();          
