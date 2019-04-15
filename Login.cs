@@ -12,14 +12,11 @@ namespace HomestayApp
         private static QuanLyHomestayEntities db = new QuanLyHomestayEntities();
         public static bool testLogin(string tk, string mk)
         {
-            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-K8S89SB\\SQLEXPRESS;Initial Catalog=QuanLyHomestay;Integrated Security=True"); 
+           
            try
             {
-                conn.Open();
-                string sql = "select * from TAIKHOAN where TaiKhoan= '"+tk+"' and MatKhau= '"+mk+"'";
-                SqlCommand cmd = new SqlCommand(sql, conn);
-                SqlDataReader dta = cmd.ExecuteReader();
-                if(dta.Read() == true)
+                TAIKHOAN s = (from i in db.TAIKHOANs where i.TaiKhoan1 == tk && i.Matkhau == mk select i).FirstOrDefault();
+                if(s!=null)
                 {
                     return true;
                 }
